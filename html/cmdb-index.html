@@ -1,0 +1,604 @@
+{% include 'header.html' %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>Home</li><li>Tables</li><li>Normal Tables</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-table fa-fw "></i>
+								CMDB配置管理
+							<span>>
+								信息查询
+							</span>
+						</h1>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+						<ul id="sparks" class="">
+							<li class="sparks-info">
+								<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
+								<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+									1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+								<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+								<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+					<div class="row">
+
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>服务器信息列表</h2>
+								</header>
+
+								<!-- widget div-->
+								<div>
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+
+                                        <div class="alert alert-info no-margin fade in">
+
+                                            <form class="form-inline" action="/cmdb/index/" method="GET">
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                                        <input type="text" placeholder="机房" name="idc" value="" class="form-control" style="width:100px">
+                                                        <input type="text" class="hidden" name="query" value="1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                                        <input type="text" placeholder="IP地址" name="idc" value="" class="form-control" name="ip" value="" style="width:150px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input type="text" placeholder="运维人" name="idc" value="" class="form-control" name="op" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
+                                                        <input type="text" placeholder="使用人" name="idc" value="" class="form-control" name="rd" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-default"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
+                                                <a data-toggle="modal" href="#" id="dialog_link" class="btn btn-default"><i class="fa fa-sm fa-fw fa-plus"></i> 高级</a>
+                                                <a data-toggle="modal" href="./" class="btn btn-default"><i class="fa fa-sm fa-fw fa-refresh"></i> 重置</a>
+                                                <a data-toggle="modal" href="#exportModal" class="btn btn-default" onclick="ajaxExport()"><i class="fa fa-sm fa-fw fa-upload"></i> 导出</a>
+                                                <a data-toggle="modal" href="#optionModal" class="btn btn-default" id="fileUpload"><i class="fa fa-sm fa-fw fa-download"></i> 导入</a>
+                                                <a class="btn btn-default enable" onclick="enable()"><i class="fa fa-sm fa-fw fa-edit"></i> 在线编辑</a>
+                                            </form>
+
+										</div>
+										<div class="table-responsive">
+
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+                                                        <th nowrap style="text-align:center;"><a href="#relayData" onclick="btnCheckAll(1)" >全</a>/<a href="#relayData" onclick="btnCheckAll(0)" >反</a></th>
+                                                        <th nowrap style="text-align:center;">机房</th>
+                                                        <th nowrap style="text-align:center;">IP地址</th>
+                                                        <th nowrap style="text-align:center;">宿主机</th>
+                                                        <th nowrap style="text-align:center;">资产编号</th>
+                                                        <th nowrap style="text-align:center;">SN号</th>
+                                                        <th nowrap style="text-align:center;">类型</th>
+                                                        <th nowrap style="text-align:center;">型号</th>
+                                                        <th nowrap style="text-align:center;">CPU</th>
+                                                        <th nowrap style="text-align:center;">内存</th>
+                                                        <th nowrap style="text-align:center;">硬盘</th>
+                                                        <th nowrap style="text-align:center;">机架位置</th>
+                                                        <th nowrap style="text-align:center;">运维人</th>
+                                                        <th nowrap style="text-align:center;">使用人</th>
+                                                        <th nowrap style="text-align:center;">使用部门</th>
+                                                        <th nowrap style="text-align:center;">分配时间</th>
+                                                        <th nowrap style="text-align:center;">分配原因</th>
+                                                        <th nowrap style="text-align:center;">资产属性</th>
+                                                        <th nowrap style="text-align:center;">再分配</th>
+                                                        <th nowrap style="text-align:center;" colspan="3">操作</th>
+													</tr>
+												</thead>
+												<tbody>
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.94.130" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="1" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="1" data-title="IP地址">172.20.94.130</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">431895</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M2-321-K08-19--20">DC2-M2-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="1" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="1" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="1" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="1" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="1" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="1" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="1" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(1)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(1)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.94.132" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="2" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="2" data-title="IP地址">172.20.94.132</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">271386</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M2-321-K08-16--17">DC2-M2-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="2" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="2" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="2" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="2" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="2" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="2" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="2" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(2)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(2)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.73" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="3" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="3" data-title="IP地址">172.20.64.73</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">523819</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FANAM</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A03-12">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="3" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="3" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="3" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="3" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="3" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="3" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="3" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(3)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serve   rRemark" onclick="serverRemarkFn(3)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.81" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="4" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="4" data-title="IP地址">172.20.64.81</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">791482</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FAMTC</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A03-6">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="4" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="4" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="4" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="4" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="4" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="4" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="4" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(4)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(4)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.83" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="5" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="5" data-title="IP地址">172.20.64.83</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">830674</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FAMLK</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A03-4">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="5" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="5" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="5" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="5" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="5" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="5" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="5" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(5)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(5)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.85" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="6" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="6" data-title="IP地址">172.20.64.85</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">692581</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FDKTA</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A03-2">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="6" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="6" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="6" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="6" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="6" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="6" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="6" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(6)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(6)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.80" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="7" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="7" data-title="IP地址">172.20.64.80</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">013548</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FAMXE</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A04-7">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="7" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="7" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="7" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="7" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="7" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="7" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="7" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(7)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(7)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.82" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="8" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="8" data-title="IP地址">172.20.64.82</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">641835</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FDKRC</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A04-6">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="8" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="8" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="8" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="8" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="8" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="8" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="8" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(8)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(8)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.84" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="9" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="9" data-title="IP地址">172.20.64.84</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">345062</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FDKTR</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A04-4">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="9" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="9" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="9" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="9" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="9" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="9" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="9" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(9)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(9)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.64.86" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="10" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="10" data-title="IP地址">172.20.64.86</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">139605</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">06FDKFR</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">IbmX3550M5</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-A04-2">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="10" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="10" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="10" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="10" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="10" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="10" data-title="资产属性">应用服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="10" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(10)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(10)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.74.26" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="11" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="11" data-title="IP地址">172.20.74.26</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">195246</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-F03-19--20">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="11" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="11" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="11" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="11" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="11" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="11" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="11" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(11)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(11)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.74.28" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="12" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="12" data-title="IP地址">172.20.74.28</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">740318</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-F03-16--17">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="12" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="12" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="12" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="12" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="12" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="12" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="12" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(12)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(12)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.74.30" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="13" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="13" data-title="IP地址">172.20.74.30</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">239781</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-F03-13--14">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="13" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="13" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="13" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="13" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="13" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="13" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="13" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(13)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(13)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.74.32" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="14" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="14" data-title="IP地址">172.20.74.32</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">238975</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-F03-11--12">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="14" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="14" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="14" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="14" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="14" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="14" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="14" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(14)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(14)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.74.34" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="15" data-title="机房">廊坊联通磐石机房</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="15" data-title="IP地址">172.20.74.34</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">871064</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M1-319-F03-08--09">DC2-M1-...</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="15" data-title="运维人">李志明</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="15" data-title="使用人"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="15" data-title="部门"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="15" data-title="分配时间"">2016年02月25日</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="15" data-title="分配原因"></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="15" data-title="资产属性">大硬盘服务器</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="15" data-title="再分配">是</td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(15)"><i class="icon-bar-chart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(15)"><i class="icon-camera"></i> 备注</a></td>
+                                                    </tr>
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+									<!-- end widget content -->
+
+								</div>
+								<!-- end widget div -->
+
+							</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+<script>
+
+    $(document).ready(function() {
+        // Dialog click
+        $('#dialog_link').click(function () {
+            $('#dialog_simple').dialog('open');
+            return false;
+
+        });
+
+        $('#dialog_simple').dialog({
+            autoOpen: false,
+            width: 600,
+            resizable: false,
+            modal: true,
+            title: "<div class='widget-header'><h4><i class='fa fa-warning'></i> Empty the recycle bin?</h4></div>",
+            buttons: [{
+                html: "<i class='fa fa-trash-o'></i>&nbsp; Delete all items",
+                "class": "btn btn-danger",
+                click: function () {
+                    $(this).dialog("close");
+                }
+            }, {
+                html: "<i class='fa fa-times'></i>&nbsp; Cancel",
+                "class": "btn btn-default",
+                click: function () {
+                    $(this).dialog("close");
+                }
+            }]
+        });
+    });
+
+</script>
+
+{% include 'footer.html' %}
