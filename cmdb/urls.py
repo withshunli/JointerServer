@@ -19,4 +19,6 @@ from cmdb.views import *
 
 urlpatterns = [
     url(r'^$', index),
+    url(r'^management$', management),
+    url(r'^management/upload/$', upload),
 ]
