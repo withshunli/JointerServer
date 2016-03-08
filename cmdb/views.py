@@ -1,12 +1,17 @@
 # encoding:utf-8
 
-from django.shortcuts import render,render_to_response
+from django.shortcuts import render,render_to_response,HttpResponse
 
 # Create your views here.
 from cmdb.models import *
 
 import os
 import xlrd,xlwt
+import json
+import random
+import string
+import traceback
+import time,datetime
 
 # CMDB表格上传文件存放目录
 file_upload = './data/cmdb/upload'
@@ -127,20 +132,20 @@ def index(request):
 def upload(request):
     def handle_uploaded_file(f):
         try:
-            destination = open('%s/text' %file_upload, 'w')
+            destination = open('%s/text.xls' %file_upload, 'wb')
             for chunk in f.chunks():
                 destination.write(chunk)
             destination.close()
-            fileName = 'text'
+            fileName = 'text.xls'
             return {'code':0,'data':fileName}
         except Exception,e:
             print Exception,e
             return {'code':1,'msg':'系统异常'}
 
     # 文件校验函数
-    def handle_table(fileName):
+    def handle_table(fileName,cloName):
         try:
-            fileData = xlrd.open_workbook('%s/text' %file_upload)
+            fileData = xlrd.open_workbook('%s/text.xls' %file_upload)
             table = fileData.sheets()[0]
             for i in range(0,table.ncols):
                 if table.col_values(i)[0] != colName[i]:
@@ -152,7 +157,7 @@ def upload(request):
 
     # 数据库更新函数
     def handle_sqlData(fileName):
-        fileData = xlrd.open_workbook('%s/text' %file_upload)
+        fileData = xlrd.open_workbook('%s/text.xls' %file_upload)
         table = fileData.sheets()[0]
         tableDic = {}
         # 临时IP列表，用于存放更新失败的IP地址
@@ -180,8 +185,8 @@ def upload(request):
                 if updateTag ==0:
                     while True:
                         '''
-                        生成唯一资产ID
-                        '''
+                     生成唯一资产ID
+                     '''
                         assetNum = string.join(random.sample((string.digits),6)).replace(' ','')
                         try:
                             assetChk = CmdbConf.objects.get(anum=assetNum)
@@ -203,9 +208,8 @@ def upload(request):
                             op = tableDic['运维人'],
                             rd = tableDic['使用人'],
                             dept = tableDic['部门'],
-                            allotReason = tableDic['分配原因'],
+                            useReason = tableDic['使用原因'],
                             attribute = tableDic['资产属性'],
-                            recycle = tableDic['再分配'],
                             remark = tableDic['备注']
                             )
                         sqlData.save()
@@ -229,9 +233,8 @@ def upload(request):
                     sqlData.op = tableDic['运维人']
                     sqlData.rd = tableDic['使用人']
                     sqlData.dept = tableDic['部门']
-                    sqlData.allotReason = tableDic['分配原因']
+                    sqlData.useReason = tableDic['使用原因']
                     sqlData.attribute = tableDic['资产属性']
-                    sqlData.recycle = tableDic['再分配']
                     sqlData.remark = tableDic['备注']
                     try:
                         sqlData.save()
@@ -246,11 +249,11 @@ def upload(request):
 
     if request.method == 'POST':
         # 定义表格列名规范，后续可配置数据库
-        colName = ['机房','IP','资产编号','SN','类型','型号','CPU','内存','硬盘','机架位置','运维人','使用人','部门','分配原因','资产属性','再分配','备注']
+        colName = ['机房','IP','资产编号','SN','类型','型号','CPU','内存','硬盘','机架位置','运维人','使用人','部门','使用原因','资产属性','备注']
         fileUpload = handle_uploaded_file(request.FILES['file'])
         if fileUpload['code'] ==0:
             fileName = fileUpload['data']
-            check = handle_table(fileName)
+            check = handle_table(fileName,colName)
             if check['code'] !=0:
                 return HttpResponse(json.dumps(check))
             else:
@@ -323,7 +326,7 @@ def export(request):
     初始化数据:
     '''
     sheet1 = f.add_sheet(u'CMDB资产数据',cell_overwrite_ok=True) #创建sheet
-    row0 = ['机房','IP','资产编号','SN','类型','型号','CPU','内存','硬盘','机架位置','运维人','使用人','部门','分配原因','资产属性','再分配','备注']
+    row0 = ['机房','IP','资产编号','SN','类型','型号','CPU','内存','硬盘','机架位置','运维人','使用人','部门','使用原因','资产属性','备注']
 
     # 数据统计页sheet
     for i in range(0,len(row0)):
@@ -574,3 +577,66 @@ def ajaxServerRemark(request):
     else:
         data = sqlData.remark
     return HttpResponse(data)
+
+# Ajax服务器变更记录函数
+def ajaxServerLogs(request):
+    serverId = request.POST['id']
+    sqlData = Servers.objects.get(id=serverId)
+    dataTable = ''
+    for i in sqlData.changeLogs.all():
+        dataTable += '<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' %(
+        i.subject,
+        i.operator,
+        i.content,
+        i.time,
+        i.memo)
+    return HttpResponse(dataTable)
+
+# Ajax服务器详细信息函数
+def ajaxServerDetail(request):
+    serverId = request.POST['id']
+    sqlData = CmdbConf.objects.get(id=serverId)
+    dataTable = '''
+    <table class="table table-striped table-hover table-bordered">
+      <tbody>
+        <tr><td>机房</td><td>%s</td></tr>
+        <tr><td>IP地址</td><td>%s</td></tr>
+        <tr><td>宿主机</td><td>%s</td></tr>
+        <tr><td>SN号</td><td>%s</td></tr>
+        <tr><td>资产编号</td><td>%s</td></tr>
+        <tr><td>设备类型</td><td>%s</td></tr>
+        <tr><td>设备型号</td><td>%s</td></tr>
+        <tr><td>CPU</td><td>%s</td></tr>
+        <tr><td>内存</td><td>%s</td></tr>
+        <tr><td>磁盘</td><td>%s</td></tr>
+        <tr><td>机架位置</td><td>%s</td></tr>
+        <tr><td>运维人</td><td>%s</td></tr>
+        <tr><td>使用人</td><td>%s</td></tr>
+        <tr><td>使用部门</td><td>%s</td></tr>
+        <tr><td>使用时间</td><td>%s</td></tr>
+        <tr><td>使用原因</td><td>%s</td></tr>
+        <tr><td>资产属性</td><td>%s</td></tr>
+        <tr><td>备注信息</td><td>%s</td></tr>
+      </tbody>
+    </table>
+    ''' %(sqlData.idc,
+          sqlData.ip,
+          sqlData.owner,
+          sqlData.sn,
+          sqlData.anum,
+          sqlData.type,
+          sqlData.model,
+          sqlData.cpu,
+          sqlData.mem,
+          sqlData.disk,
+          sqlData.position,
+          sqlData.op,
+          sqlData.rd,
+          sqlData.dept,
+          sqlData.useTime,
+          sqlData.useReason,
+          sqlData.attribute,
+          sqlData.remark)
+
+    return HttpResponse(dataTable)
+

@@ -14766,7 +14766,7 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
 	border:1px solid #797979!important
 }
 body:not(.menu-on-top).desktop-detected {
-	min-height:1190px!important
+	min-height:1000px!important
 }
 #extr-page body.desktop-detected {
 	min-height:100%!important

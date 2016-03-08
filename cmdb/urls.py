@@ -18,7 +18,10 @@ from django.contrib import admin
 from cmdb.views import *
 
 urlpatterns = [
-    url(r'^$', index),
+    url(r'^index$', index),
+    url(r'^index/$', index),
+    url(r'^index/ajaxServerDetail/', ajaxServerDetail),
+    url(r'^index/ajaxOptionLogs/', ajaxOptionLogs),
     url(r'^management$', management),
     url(r'^management/upload/$', upload),
 ]

@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02213760-abd0-4625-95ef-1d230b43a181" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmdb/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/migrations/__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JointerServer/settings.py" afterPath="$PROJECT_DIR$/JointerServer/settings.py" />
+      <change type="DELETED" beforePath="E:\MyProject\JointerServer\data\cmdb\upload\text" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/cmdb-index.html" afterPath="$PROJECT_DIR$/html/cmdb-index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.html" afterPath="$PROJECT_DIR$/html/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/models.py" afterPath="$PROJECT_DIR$/cmdb/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JointerServer/settings.py" afterPath="$PROJECT_DIR$/JointerServer/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/smartadmin-production.min.css" afterPath="$PROJECT_DIR$/static/css/smartadmin-production.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/urls.py" afterPath="$PROJECT_DIR$/cmdb/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/views.py" afterPath="$PROJECT_DIR$/cmdb/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/cmdb-index.html" afterPath="$PROJECT_DIR$/html/cmdb-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.html" afterPath="$PROJECT_DIR$/html/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JointerServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,6 +28,9 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
@@ -35,176 +39,70 @@
     <favorites_list name="JointerServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JointerServer/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="31" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1586" max-vertical-offset="2280">
+              <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdb-index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cmdb-index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3275862">
-              <caret line="315" column="14" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.5742925" vertical-offset="6144" max-vertical-offset="12350">
+              <caret line="349" column="8" selection-start-line="349" selection-start-column="8" selection-end-line="349" selection-end-column="8" />
               <folding>
-                <element signature="e#7460#7486#0#HTML" expanded="true" />
-                <element signature="e#7647#7673#0#HTML" expanded="true" />
-                <element signature="e#7749#7775#0#HTML" expanded="true" />
-                <element signature="e#7853#7879#0#HTML" expanded="true" />
-                <element signature="e#7957#7983#0#HTML" expanded="true" />
-                <element signature="e#8059#8085#0#HTML" expanded="true" />
-                <element signature="e#8161#8187#0#HTML" expanded="true" />
-                <element signature="e#8264#8290#0#HTML" expanded="true" />
-                <element signature="e#8366#8392#0#HTML" expanded="true" />
-                <element signature="e#8468#8494#0#HTML" expanded="true" />
-                <element signature="e#8571#8597#0#HTML" expanded="true" />
-                <element signature="e#8674#8700#0#HTML" expanded="true" />
-                <element signature="e#8778#8804#0#HTML" expanded="true" />
-                <element signature="e#8882#8908#0#HTML" expanded="true" />
-                <element signature="e#9106#9132#0#HTML" expanded="true" />
-                <element signature="e#9287#9313#0#HTML" expanded="true" />
-                <element signature="e#9335#9377#0#HTML" expanded="true" />
-                <element signature="e#9531#9557#0#HTML" expanded="true" />
-                <element signature="e#9579#9621#0#HTML" expanded="true" />
-                <element signature="e#9781#9807#0#HTML" expanded="true" />
-                <element signature="e#9829#9871#0#HTML" expanded="true" />
-                <element signature="e#9951#9977#0#HTML" expanded="true" />
-                <element signature="e#9999#10041#0#HTML" expanded="true" />
-                <element signature="e#10118#10144#0#HTML" expanded="true" />
-                <element signature="e#10166#10208#0#HTML" expanded="true" />
-                <element signature="e#10296#10322#0#HTML" expanded="true" />
-                <element signature="e#10344#10386#0#HTML" expanded="true" />
-                <element signature="e#10474#10500#0#HTML" expanded="true" />
-                <element signature="e#10522#10564#0#HTML" expanded="true" />
-                <element signature="e#10642#10668#0#HTML" expanded="true" />
-                <element signature="e#10690#10732#0#HTML" expanded="true" />
-                <element signature="e#10811#10837#0#HTML" expanded="true" />
-                <element signature="e#10859#10901#0#HTML" expanded="true" />
-                <element signature="e#10977#11003#0#HTML" expanded="true" />
-                <element signature="e#11025#11067#0#HTML" expanded="true" />
-                <element signature="e#11173#11199#0#HTML" expanded="true" />
-                <element signature="e#11221#11263#0#HTML" expanded="true" />
-                <element signature="e#11413#11439#0#HTML" expanded="true" />
-                <element signature="e#11461#11503#0#HTML" expanded="true" />
-                <element signature="e#11579#11605#0#HTML" expanded="true" />
-                <element signature="e#11753#11779#0#HTML" expanded="true" />
-                <element signature="e#11927#11953#0#HTML" expanded="true" />
-                <element signature="e#12132#12158#0#HTML" expanded="true" />
-                <element signature="e#12446#12472#0#HTML" expanded="true" />
-                <element signature="e#12627#12653#0#HTML" expanded="true" />
-                <element signature="e#12675#12717#0#HTML" expanded="true" />
-                <element signature="e#12871#12897#0#HTML" expanded="true" />
-                <element signature="e#12919#12961#0#HTML" expanded="true" />
-                <element signature="e#13121#13147#0#HTML" expanded="true" />
-                <element signature="e#13169#13211#0#HTML" expanded="true" />
-                <element signature="e#13291#13317#0#HTML" expanded="true" />
-                <element signature="e#13339#13381#0#HTML" expanded="true" />
-                <element signature="e#13458#13484#0#HTML" expanded="true" />
-                <element signature="e#13506#13548#0#HTML" expanded="true" />
-                <element signature="e#13636#13662#0#HTML" expanded="true" />
-                <element signature="e#13684#13726#0#HTML" expanded="true" />
-                <element signature="e#13814#13840#0#HTML" expanded="true" />
-                <element signature="e#13862#13904#0#HTML" expanded="true" />
-                <element signature="e#13982#14008#0#HTML" expanded="true" />
-                <element signature="e#14030#14072#0#HTML" expanded="true" />
-                <element signature="e#14151#14177#0#HTML" expanded="true" />
-                <element signature="e#14199#14241#0#HTML" expanded="true" />
-                <element signature="e#14317#14343#0#HTML" expanded="true" />
-                <element signature="e#14365#14407#0#HTML" expanded="true" />
-                <element signature="e#14513#14539#0#HTML" expanded="true" />
-                <element signature="e#14561#14603#0#HTML" expanded="true" />
-                <element signature="e#14753#14779#0#HTML" expanded="true" />
-                <element signature="e#14801#14843#0#HTML" expanded="true" />
-                <element signature="e#14919#14945#0#HTML" expanded="true" />
-                <element signature="e#15093#15119#0#HTML" expanded="true" />
-                <element signature="e#15267#15293#0#HTML" expanded="true" />
-                <element signature="e#15472#15498#0#HTML" expanded="true" />
-                <element signature="e#16170#16194#0#HTML" expanded="true" />
-                <element signature="e#16234#16253#0#HTML" expanded="true" />
+                <element signature="e#5224#5243#0#HTML" expanded="true" />
+                <element signature="e#7466#7492#0#HTML" expanded="true" />
+                <element signature="e#7653#7679#0#HTML" expanded="true" />
+                <element signature="e#7755#7781#0#HTML" expanded="true" />
+                <element signature="e#7859#7885#0#HTML" expanded="true" />
+                <element signature="e#7963#7989#0#HTML" expanded="true" />
+                <element signature="e#8066#8092#0#HTML" expanded="true" />
+                <element signature="e#8168#8194#0#HTML" expanded="true" />
+                <element signature="e#8270#8296#0#HTML" expanded="true" />
+                <element signature="e#8373#8399#0#HTML" expanded="true" />
+                <element signature="e#8475#8501#0#HTML" expanded="true" />
+                <element signature="e#8577#8603#0#HTML" expanded="true" />
+                <element signature="e#8680#8706#0#HTML" expanded="true" />
+                <element signature="e#8783#8809#0#HTML" expanded="true" />
+                <element signature="e#8887#8913#0#HTML" expanded="true" />
+                <element signature="e#8991#9017#0#HTML" expanded="true" />
+                <element signature="e#9445#9481#0#HTML" expanded="true" />
+                <element signature="e#9633#9659#0#HTML" expanded="true" />
+                <element signature="e#9744#9770#0#HTML" expanded="true" />
+                <element signature="e#9854#9880#0#HTML" expanded="true" />
+                <element signature="e#9966#9992#0#HTML" expanded="true" />
+                <element signature="e#10076#10102#0#HTML" expanded="true" />
+                <element signature="e#10188#10214#0#HTML" expanded="true" />
+                <element signature="e#10301#10327#0#HTML" expanded="true" />
+                <element signature="e#10412#10438#0#HTML" expanded="true" />
+                <element signature="e#10523#10549#0#HTML" expanded="true" />
+                <element signature="e#10635#10661#0#HTML" expanded="true" />
+                <element signature="e#10745#10771#0#HTML" expanded="true" />
+                <element signature="e#10855#10881#0#HTML" expanded="true" />
+                <element signature="e#10967#10993#0#HTML" expanded="true" />
+                <element signature="e#11107#11144#0#HTML" expanded="true" />
+                <element signature="e#12938#12982#0#HTML" expanded="true" />
+                <element signature="e#18857#18881#0#HTML" expanded="true" />
+                <element signature="e#18921#18940#0#HTML" expanded="true" />
+                <element signature="e#19833#19857#0#HTML" expanded="true" />
+                <element signature="e#19897#19916#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
+        <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmdb-management.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/cmdb-management.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.107143">
-              <caret line="461" column="43" selection-start-line="461" selection-start-column="43" selection-end-line="461" selection-end-column="43" />
-              <folding>
-                <element signature="e#7790#7816#0#HTML" expanded="true" />
-                <element signature="e#7995#8021#0#HTML" expanded="true" />
-                <element signature="e#8097#8123#0#HTML" expanded="true" />
-                <element signature="e#8201#8227#0#HTML" expanded="true" />
-                <element signature="e#8304#8330#0#HTML" expanded="true" />
-                <element signature="e#8408#8434#0#HTML" expanded="true" />
-                <element signature="e#8511#8537#0#HTML" expanded="true" />
-                <element signature="e#8613#8639#0#HTML" expanded="true" />
-                <element signature="e#8715#8741#0#HTML" expanded="true" />
-                <element signature="e#8818#8844#0#HTML" expanded="true" />
-                <element signature="e#8920#8946#0#HTML" expanded="true" />
-                <element signature="e#9022#9048#0#HTML" expanded="true" />
-                <element signature="e#9126#9152#0#HTML" expanded="true" />
-                <element signature="e#9229#9255#0#HTML" expanded="true" />
-                <element signature="e#9332#9358#0#HTML" expanded="true" />
-                <element signature="e#9436#9462#0#HTML" expanded="true" />
-                <element signature="e#9540#9566#0#HTML" expanded="true" />
-                <element signature="e#9644#9670#0#HTML" expanded="true" />
-                <element signature="e#9748#9774#0#HTML" expanded="true" />
-                <element signature="e#9851#9877#0#HTML" expanded="true" />
-                <element signature="e#10075#10101#0#HTML" expanded="true" />
-                <element signature="e#10256#10282#0#HTML" expanded="true" />
-                <element signature="e#10304#10346#0#HTML" expanded="true" />
-                <element signature="e#10504#10530#0#HTML" expanded="true" />
-                <element signature="e#10552#10594#0#HTML" expanded="true" />
-                <element signature="e#10754#10780#0#HTML" expanded="true" />
-                <element signature="e#10802#10844#0#HTML" expanded="true" />
-                <element signature="e#10924#10950#0#HTML" expanded="true" />
-                <element signature="e#10972#11014#0#HTML" expanded="true" />
-                <element signature="e#11103#11129#0#HTML" expanded="true" />
-                <element signature="e#11151#11193#0#HTML" expanded="true" />
-                <element signature="e#11270#11296#0#HTML" expanded="true" />
-                <element signature="e#11318#11360#0#HTML" expanded="true" />
-                <element signature="e#11448#11474#0#HTML" expanded="true" />
-                <element signature="e#11496#11538#0#HTML" expanded="true" />
-                <element signature="e#11612#11638#0#HTML" expanded="true" />
-                <element signature="e#11660#11702#0#HTML" expanded="true" />
-                <element signature="e#11776#11802#0#HTML" expanded="true" />
-                <element signature="e#11824#11866#0#HTML" expanded="true" />
-                <element signature="e#11940#11966#0#HTML" expanded="true" />
-                <element signature="e#11988#12030#0#HTML" expanded="true" />
-                <element signature="e#12144#12170#0#HTML" expanded="true" />
-                <element signature="e#12192#12234#0#HTML" expanded="true" />
-                <element signature="e#12383#12409#0#HTML" expanded="true" />
-                <element signature="e#12431#12473#0#HTML" expanded="true" />
-                <element signature="e#12619#12645#0#HTML" expanded="true" />
-                <element signature="e#12667#12709#0#HTML" expanded="true" />
-                <element signature="e#12856#12882#0#HTML" expanded="true" />
-                <element signature="e#12904#12946#0#HTML" expanded="true" />
-                <element signature="e#13205#13231#0#HTML" expanded="true" />
-                <element signature="e#13253#13295#0#HTML" expanded="true" />
-                <element signature="e#13455#13481#0#HTML" expanded="true" />
-                <element signature="e#13503#13545#0#HTML" expanded="true" />
-                <element signature="e#13705#13731#0#HTML" expanded="true" />
-                <element signature="e#13753#13795#0#HTML" expanded="true" />
-                <element signature="e#13947#13973#0#HTML" expanded="true" />
-                <element signature="e#14121#14147#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -212,18 +110,48 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
+      <file leaf-file-name="pagination.html" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python27/Lib/site-packages/pagination/templates/pagination/pagination.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="1007">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.7" vertical-offset="73402" max-vertical-offset="105792">
+              <caret line="3877" column="5" selection-start-line="3877" selection-start-column="5" selection-end-line="3877" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.25" vertical-offset="873" max-vertical-offset="1729">
+              <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.666666" vertical-offset="10346" max-vertical-offset="12312">
+              <caret line="574" column="31" selection-start-line="574" selection-start-column="31" selection-end-line="574" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -232,40 +160,18 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding>
-                <element signature="e#19#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="912">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/footer.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.607142">
-              <caret line="113" column="60" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmdb/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6020202">
-              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -291,14 +197,17 @@
         <option value="$PROJECT_DIR$/dashboard/views.py" />
         <option value="$PROJECT_DIR$/dashboard/urls.py" />
         <option value="$PROJECT_DIR$/JointerServer/urls.py" />
-        <option value="$PROJECT_DIR$/cmdb/models.py" />
-        <option value="$PROJECT_DIR$/html/header.html" />
-        <option value="$PROJECT_DIR$/html/cmdb-index.html" />
         <option value="$PROJECT_DIR$/html/footer.html" />
-        <option value="$PROJECT_DIR$/cmdb/urls.py" />
         <option value="$PROJECT_DIR$/html/cmdb-management.html" />
-        <option value="$PROJECT_DIR$/JointerServer/settings.py" />
+        <option value="$PROJECT_DIR$/cmdb/models.py" />
+        <option value="$PROJECT_DIR$/static/css/smartadmin-production.min.css" />
+        <option value="D:/Python27/Lib/site-packages/pagination/templates/pagination/pagination.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/cmdb/views.py" />
+        <option value="$PROJECT_DIR$/html/header.html" />
+        <option value="$PROJECT_DIR$/JointerServer/settings.py" />
+        <option value="$PROJECT_DIR$/cmdb/urls.py" />
+        <option value="$PROJECT_DIR$/html/cmdb-index.html" />
       </list>
     </option>
   </component>
@@ -310,8 +219,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -334,8 +243,6 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -344,6 +251,288 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="JointerServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_pagination-1.0.7-py2.7.egg-info" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.7.6 (D:\Python27\python.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_pagination-1.0.7-py2.7.egg-info" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -367,6 +556,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JointerServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,15 +635,25 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -449,32 +666,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Django server.JointerServer">
-    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-      <method />
-    </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="JointerServer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -503,7 +694,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+    <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -514,10 +705,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="JointerServer" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="host" value="127.0.0.1" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="JointerServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="JointerServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -561,82 +806,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="JointerServer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="JointerServer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="JointerServer" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -658,6 +827,23 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="JointerServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -685,6 +871,29 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="JointerServer" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="JointerServer" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -707,6 +916,8 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -727,27 +938,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27770534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21773142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27742615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37130803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -761,14 +974,75 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="532">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="475">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1273" max-vertical-offset="2052">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="2945">
+          <caret line="113" column="56" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding />
         </state>
@@ -776,108 +1050,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#566#607#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7460#7486#0#HTML" expanded="true" />
-            <element signature="e#7647#7673#0#HTML" expanded="true" />
-            <element signature="e#7749#7775#0#HTML" expanded="true" />
-            <element signature="e#7853#7879#0#HTML" expanded="true" />
-            <element signature="e#7957#7983#0#HTML" expanded="true" />
-            <element signature="e#8059#8085#0#HTML" expanded="true" />
-            <element signature="e#8161#8187#0#HTML" expanded="true" />
-            <element signature="e#8264#8290#0#HTML" expanded="true" />
-            <element signature="e#8366#8392#0#HTML" expanded="true" />
-            <element signature="e#8468#8494#0#HTML" expanded="true" />
-            <element signature="e#8571#8597#0#HTML" expanded="true" />
-            <element signature="e#8674#8700#0#HTML" expanded="true" />
-            <element signature="e#8778#8804#0#HTML" expanded="true" />
-            <element signature="e#8882#8908#0#HTML" expanded="true" />
-            <element signature="e#9106#9132#0#HTML" expanded="true" />
-            <element signature="e#9287#9313#0#HTML" expanded="true" />
-            <element signature="e#9335#9377#0#HTML" expanded="true" />
-            <element signature="e#9531#9557#0#HTML" expanded="true" />
-            <element signature="e#9579#9621#0#HTML" expanded="true" />
-            <element signature="e#9781#9807#0#HTML" expanded="true" />
-            <element signature="e#9829#9871#0#HTML" expanded="true" />
-            <element signature="e#9951#9977#0#HTML" expanded="true" />
-            <element signature="e#9999#10041#0#HTML" expanded="true" />
-            <element signature="e#10118#10144#0#HTML" expanded="true" />
-            <element signature="e#10166#10208#0#HTML" expanded="true" />
-            <element signature="e#10296#10322#0#HTML" expanded="true" />
-            <element signature="e#10344#10386#0#HTML" expanded="true" />
-            <element signature="e#10474#10500#0#HTML" expanded="true" />
-            <element signature="e#10522#10564#0#HTML" expanded="true" />
-            <element signature="e#10642#10668#0#HTML" expanded="true" />
-            <element signature="e#10690#10732#0#HTML" expanded="true" />
-            <element signature="e#10811#10837#0#HTML" expanded="true" />
-            <element signature="e#10859#10901#0#HTML" expanded="true" />
-            <element signature="e#10977#11003#0#HTML" expanded="true" />
-            <element signature="e#11025#11067#0#HTML" expanded="true" />
-            <element signature="e#11173#11199#0#HTML" expanded="true" />
-            <element signature="e#11221#11263#0#HTML" expanded="true" />
-            <element signature="e#11413#11439#0#HTML" expanded="true" />
-            <element signature="e#11461#11503#0#HTML" expanded="true" />
-            <element signature="e#11579#11605#0#HTML" expanded="true" />
-            <element signature="e#11753#11779#0#HTML" expanded="true" />
-            <element signature="e#11927#11953#0#HTML" expanded="true" />
-            <element signature="e#12132#12158#0#HTML" expanded="true" />
-            <element signature="e#12446#12472#0#HTML" expanded="true" />
-            <element signature="e#12627#12653#0#HTML" expanded="true" />
-            <element signature="e#12675#12717#0#HTML" expanded="true" />
-            <element signature="e#12871#12897#0#HTML" expanded="true" />
-            <element signature="e#12919#12961#0#HTML" expanded="true" />
-            <element signature="e#13121#13147#0#HTML" expanded="true" />
-            <element signature="e#13169#13211#0#HTML" expanded="true" />
-            <element signature="e#13291#13317#0#HTML" expanded="true" />
-            <element signature="e#13339#13381#0#HTML" expanded="true" />
-            <element signature="e#13458#13484#0#HTML" expanded="true" />
-            <element signature="e#13506#13548#0#HTML" expanded="true" />
-            <element signature="e#13636#13662#0#HTML" expanded="true" />
-            <element signature="e#13684#13726#0#HTML" expanded="true" />
-            <element signature="e#13814#13840#0#HTML" expanded="true" />
-            <element signature="e#13862#13904#0#HTML" expanded="true" />
-            <element signature="e#13982#14008#0#HTML" expanded="true" />
-            <element signature="e#14030#14072#0#HTML" expanded="true" />
-            <element signature="e#14151#14177#0#HTML" expanded="true" />
-            <element signature="e#14199#14241#0#HTML" expanded="true" />
-            <element signature="e#14317#14343#0#HTML" expanded="true" />
-            <element signature="e#14365#14407#0#HTML" expanded="true" />
-            <element signature="e#14513#14539#0#HTML" expanded="true" />
-            <element signature="e#14561#14603#0#HTML" expanded="true" />
-            <element signature="e#14753#14779#0#HTML" expanded="true" />
-            <element signature="e#14801#14843#0#HTML" expanded="true" />
-            <element signature="e#14919#14945#0#HTML" expanded="true" />
-            <element signature="e#15093#15119#0#HTML" expanded="true" />
-            <element signature="e#15267#15293#0#HTML" expanded="true" />
-            <element signature="e#15472#15498#0#HTML" expanded="true" />
-            <element signature="e#16170#16194#0#HTML" expanded="true" />
-            <element signature="e#16234#16253#0#HTML" expanded="true" />
+            <element signature="e#5224#5243#0#HTML" expanded="true" />
+            <element signature="e#7466#7492#0#HTML" expanded="true" />
+            <element signature="e#7653#7679#0#HTML" expanded="true" />
+            <element signature="e#7755#7781#0#HTML" expanded="true" />
+            <element signature="e#7859#7885#0#HTML" expanded="true" />
+            <element signature="e#7963#7989#0#HTML" expanded="true" />
+            <element signature="e#8066#8092#0#HTML" expanded="true" />
+            <element signature="e#8168#8194#0#HTML" expanded="true" />
+            <element signature="e#8270#8296#0#HTML" expanded="true" />
+            <element signature="e#8373#8399#0#HTML" expanded="true" />
+            <element signature="e#8475#8501#0#HTML" expanded="true" />
+            <element signature="e#8577#8603#0#HTML" expanded="true" />
+            <element signature="e#8680#8706#0#HTML" expanded="true" />
+            <element signature="e#8783#8809#0#HTML" expanded="true" />
+            <element signature="e#8887#8913#0#HTML" expanded="true" />
+            <element signature="e#8991#9017#0#HTML" expanded="true" />
+            <element signature="e#9445#9481#0#HTML" expanded="true" />
+            <element signature="e#9633#9659#0#HTML" expanded="true" />
+            <element signature="e#9744#9770#0#HTML" expanded="true" />
+            <element signature="e#9854#9880#0#HTML" expanded="true" />
+            <element signature="e#9966#9992#0#HTML" expanded="true" />
+            <element signature="e#10076#10102#0#HTML" expanded="true" />
+            <element signature="e#10188#10214#0#HTML" expanded="true" />
+            <element signature="e#10301#10327#0#HTML" expanded="true" />
+            <element signature="e#10412#10438#0#HTML" expanded="true" />
+            <element signature="e#10523#10549#0#HTML" expanded="true" />
+            <element signature="e#10635#10661#0#HTML" expanded="true" />
+            <element signature="e#10745#10771#0#HTML" expanded="true" />
+            <element signature="e#10855#10881#0#HTML" expanded="true" />
+            <element signature="e#10967#10993#0#HTML" expanded="true" />
+            <element signature="e#11107#11144#0#HTML" expanded="true" />
+            <element signature="e#12938#12982#0#HTML" expanded="true" />
+            <element signature="e#18857#18881#0#HTML" expanded="true" />
+            <element signature="e#18921#18940#0#HTML" expanded="true" />
+            <element signature="e#19833#19857#0#HTML" expanded="true" />
+            <element signature="e#19897#19916#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding />
         </state>
@@ -885,7 +1118,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="68" column="70" selection-start-line="68" selection-start-column="70" selection-end-line="68" selection-end-column="70" />
           <folding />
         </state>
@@ -893,41 +1126,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/plugin/ckeditor/samples/divreplace.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#47#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding />
         </state>
@@ -935,100 +1163,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#566#607#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <element signature="e#7460#7486#0#HTML" expanded="true" />
-            <element signature="e#7647#7673#0#HTML" expanded="true" />
-            <element signature="e#7749#7775#0#HTML" expanded="true" />
-            <element signature="e#7853#7879#0#HTML" expanded="true" />
-            <element signature="e#7957#7983#0#HTML" expanded="true" />
-            <element signature="e#8059#8085#0#HTML" expanded="true" />
-            <element signature="e#8161#8187#0#HTML" expanded="true" />
-            <element signature="e#8264#8290#0#HTML" expanded="true" />
-            <element signature="e#8366#8392#0#HTML" expanded="true" />
-            <element signature="e#8468#8494#0#HTML" expanded="true" />
-            <element signature="e#8571#8597#0#HTML" expanded="true" />
-            <element signature="e#8674#8700#0#HTML" expanded="true" />
-            <element signature="e#8778#8804#0#HTML" expanded="true" />
-            <element signature="e#8882#8908#0#HTML" expanded="true" />
-            <element signature="e#9106#9132#0#HTML" expanded="true" />
-            <element signature="e#9287#9313#0#HTML" expanded="true" />
-            <element signature="e#9335#9377#0#HTML" expanded="true" />
-            <element signature="e#9531#9557#0#HTML" expanded="true" />
-            <element signature="e#9579#9621#0#HTML" expanded="true" />
-            <element signature="e#9781#9807#0#HTML" expanded="true" />
-            <element signature="e#9829#9871#0#HTML" expanded="true" />
-            <element signature="e#9951#9977#0#HTML" expanded="true" />
-            <element signature="e#9999#10041#0#HTML" expanded="true" />
-            <element signature="e#10118#10144#0#HTML" expanded="true" />
-            <element signature="e#10166#10208#0#HTML" expanded="true" />
-            <element signature="e#10296#10322#0#HTML" expanded="true" />
-            <element signature="e#10344#10386#0#HTML" expanded="true" />
-            <element signature="e#10474#10500#0#HTML" expanded="true" />
-            <element signature="e#10522#10564#0#HTML" expanded="true" />
-            <element signature="e#10642#10668#0#HTML" expanded="true" />
-            <element signature="e#10690#10732#0#HTML" expanded="true" />
-            <element signature="e#10811#10837#0#HTML" expanded="true" />
-            <element signature="e#10859#10901#0#HTML" expanded="true" />
-            <element signature="e#10977#11003#0#HTML" expanded="true" />
-            <element signature="e#11025#11067#0#HTML" expanded="true" />
-            <element signature="e#11173#11199#0#HTML" expanded="true" />
-            <element signature="e#11221#11263#0#HTML" expanded="true" />
-            <element signature="e#11413#11439#0#HTML" expanded="true" />
-            <element signature="e#11461#11503#0#HTML" expanded="true" />
-            <element signature="e#11579#11605#0#HTML" expanded="true" />
-            <element signature="e#11753#11779#0#HTML" expanded="true" />
-            <element signature="e#11927#11953#0#HTML" expanded="true" />
-            <element signature="e#12132#12158#0#HTML" expanded="true" />
-            <element signature="e#12446#12472#0#HTML" expanded="true" />
-            <element signature="e#12627#12653#0#HTML" expanded="true" />
-            <element signature="e#12675#12717#0#HTML" expanded="true" />
-            <element signature="e#12871#12897#0#HTML" expanded="true" />
-            <element signature="e#12919#12961#0#HTML" expanded="true" />
-            <element signature="e#13121#13147#0#HTML" expanded="true" />
-            <element signature="e#13169#13211#0#HTML" expanded="true" />
-            <element signature="e#13291#13317#0#HTML" expanded="true" />
-            <element signature="e#13339#13381#0#HTML" expanded="true" />
-            <element signature="e#13458#13484#0#HTML" expanded="true" />
-            <element signature="e#13506#13548#0#HTML" expanded="true" />
-            <element signature="e#13636#13662#0#HTML" expanded="true" />
-            <element signature="e#13684#13726#0#HTML" expanded="true" />
-            <element signature="e#13814#13840#0#HTML" expanded="true" />
-            <element signature="e#13862#13904#0#HTML" expanded="true" />
-            <element signature="e#13982#14008#0#HTML" expanded="true" />
-            <element signature="e#14030#14072#0#HTML" expanded="true" />
-            <element signature="e#14151#14177#0#HTML" expanded="true" />
-            <element signature="e#14199#14241#0#HTML" expanded="true" />
-            <element signature="e#14317#14343#0#HTML" expanded="true" />
-            <element signature="e#14365#14407#0#HTML" expanded="true" />
-            <element signature="e#14513#14539#0#HTML" expanded="true" />
-            <element signature="e#14561#14603#0#HTML" expanded="true" />
-            <element signature="e#14753#14779#0#HTML" expanded="true" />
-            <element signature="e#14801#14843#0#HTML" expanded="true" />
-            <element signature="e#14919#14945#0#HTML" expanded="true" />
-            <element signature="e#15093#15119#0#HTML" expanded="true" />
-            <element signature="e#15267#15293#0#HTML" expanded="true" />
-            <element signature="e#15472#15498#0#HTML" expanded="true" />
-            <element signature="e#16170#16194#0#HTML" expanded="true" />
-            <element signature="e#16234#16253#0#HTML" expanded="true" />
+            <element signature="e#5224#5243#0#HTML" expanded="true" />
+            <element signature="e#7466#7492#0#HTML" expanded="true" />
+            <element signature="e#7653#7679#0#HTML" expanded="true" />
+            <element signature="e#7755#7781#0#HTML" expanded="true" />
+            <element signature="e#7859#7885#0#HTML" expanded="true" />
+            <element signature="e#7963#7989#0#HTML" expanded="true" />
+            <element signature="e#8066#8092#0#HTML" expanded="true" />
+            <element signature="e#8168#8194#0#HTML" expanded="true" />
+            <element signature="e#8270#8296#0#HTML" expanded="true" />
+            <element signature="e#8373#8399#0#HTML" expanded="true" />
+            <element signature="e#8475#8501#0#HTML" expanded="true" />
+            <element signature="e#8577#8603#0#HTML" expanded="true" />
+            <element signature="e#8680#8706#0#HTML" expanded="true" />
+            <element signature="e#8783#8809#0#HTML" expanded="true" />
+            <element signature="e#8887#8913#0#HTML" expanded="true" />
+            <element signature="e#8991#9017#0#HTML" expanded="true" />
+            <element signature="e#9445#9481#0#HTML" expanded="true" />
+            <element signature="e#9633#9659#0#HTML" expanded="true" />
+            <element signature="e#9744#9770#0#HTML" expanded="true" />
+            <element signature="e#9854#9880#0#HTML" expanded="true" />
+            <element signature="e#9966#9992#0#HTML" expanded="true" />
+            <element signature="e#10076#10102#0#HTML" expanded="true" />
+            <element signature="e#10188#10214#0#HTML" expanded="true" />
+            <element signature="e#10301#10327#0#HTML" expanded="true" />
+            <element signature="e#10412#10438#0#HTML" expanded="true" />
+            <element signature="e#10523#10549#0#HTML" expanded="true" />
+            <element signature="e#10635#10661#0#HTML" expanded="true" />
+            <element signature="e#10745#10771#0#HTML" expanded="true" />
+            <element signature="e#10855#10881#0#HTML" expanded="true" />
+            <element signature="e#10967#10993#0#HTML" expanded="true" />
+            <element signature="e#11107#11144#0#HTML" expanded="true" />
+            <element signature="e#12938#12982#0#HTML" expanded="true" />
+            <element signature="e#18857#18881#0#HTML" expanded="true" />
+            <element signature="e#18921#18940#0#HTML" expanded="true" />
+            <element signature="e#19833#19857#0#HTML" expanded="true" />
+            <element signature="e#19897#19916#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1036,17 +1224,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#566#607#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
@@ -1054,7 +1240,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="e#566#607#0" expanded="false" />
@@ -1064,15 +1250,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
@@ -1080,7 +1265,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1088,80 +1273,144 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#566#607#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#566#607#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/plugin/ckeditor/samples/divreplace.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2185" max-vertical-offset="2983">
+          <caret line="115" column="56" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="513">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/xlrd/compdoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.433332" vertical-offset="1654" max-vertical-offset="9025">
+          <caret line="117" column="65" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/smartadmin-production.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.1" vertical-offset="280169" max-vertical-offset="280782">
+          <caret line="14768" column="19" selection-start-line="14768" selection-start-column="19" selection-end-line="14768" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/pagination/templatetags/pagination_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4427">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python27/Lib/site-packages/pagination/templates/pagination/pagination.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="1007">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.7" vertical-offset="73402" max-vertical-offset="105792">
+          <caret line="3877" column="5" selection-start-line="3877" selection-start-column="5" selection-end-line="3877" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="912">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
@@ -1169,216 +1418,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+        <state vertical-scroll-proportion="-12.25" vertical-offset="873" max-vertical-offset="1729">
+          <caret line="64" column="52" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3275862">
-          <caret line="315" column="14" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="14" />
-          <folding>
-            <element signature="e#7460#7486#0#HTML" expanded="true" />
-            <element signature="e#7647#7673#0#HTML" expanded="true" />
-            <element signature="e#7749#7775#0#HTML" expanded="true" />
-            <element signature="e#7853#7879#0#HTML" expanded="true" />
-            <element signature="e#7957#7983#0#HTML" expanded="true" />
-            <element signature="e#8059#8085#0#HTML" expanded="true" />
-            <element signature="e#8161#8187#0#HTML" expanded="true" />
-            <element signature="e#8264#8290#0#HTML" expanded="true" />
-            <element signature="e#8366#8392#0#HTML" expanded="true" />
-            <element signature="e#8468#8494#0#HTML" expanded="true" />
-            <element signature="e#8571#8597#0#HTML" expanded="true" />
-            <element signature="e#8674#8700#0#HTML" expanded="true" />
-            <element signature="e#8778#8804#0#HTML" expanded="true" />
-            <element signature="e#8882#8908#0#HTML" expanded="true" />
-            <element signature="e#9106#9132#0#HTML" expanded="true" />
-            <element signature="e#9287#9313#0#HTML" expanded="true" />
-            <element signature="e#9335#9377#0#HTML" expanded="true" />
-            <element signature="e#9531#9557#0#HTML" expanded="true" />
-            <element signature="e#9579#9621#0#HTML" expanded="true" />
-            <element signature="e#9781#9807#0#HTML" expanded="true" />
-            <element signature="e#9829#9871#0#HTML" expanded="true" />
-            <element signature="e#9951#9977#0#HTML" expanded="true" />
-            <element signature="e#9999#10041#0#HTML" expanded="true" />
-            <element signature="e#10118#10144#0#HTML" expanded="true" />
-            <element signature="e#10166#10208#0#HTML" expanded="true" />
-            <element signature="e#10296#10322#0#HTML" expanded="true" />
-            <element signature="e#10344#10386#0#HTML" expanded="true" />
-            <element signature="e#10474#10500#0#HTML" expanded="true" />
-            <element signature="e#10522#10564#0#HTML" expanded="true" />
-            <element signature="e#10642#10668#0#HTML" expanded="true" />
-            <element signature="e#10690#10732#0#HTML" expanded="true" />
-            <element signature="e#10811#10837#0#HTML" expanded="true" />
-            <element signature="e#10859#10901#0#HTML" expanded="true" />
-            <element signature="e#10977#11003#0#HTML" expanded="true" />
-            <element signature="e#11025#11067#0#HTML" expanded="true" />
-            <element signature="e#11173#11199#0#HTML" expanded="true" />
-            <element signature="e#11221#11263#0#HTML" expanded="true" />
-            <element signature="e#11413#11439#0#HTML" expanded="true" />
-            <element signature="e#11461#11503#0#HTML" expanded="true" />
-            <element signature="e#11579#11605#0#HTML" expanded="true" />
-            <element signature="e#11753#11779#0#HTML" expanded="true" />
-            <element signature="e#11927#11953#0#HTML" expanded="true" />
-            <element signature="e#12132#12158#0#HTML" expanded="true" />
-            <element signature="e#12446#12472#0#HTML" expanded="true" />
-            <element signature="e#12627#12653#0#HTML" expanded="true" />
-            <element signature="e#12675#12717#0#HTML" expanded="true" />
-            <element signature="e#12871#12897#0#HTML" expanded="true" />
-            <element signature="e#12919#12961#0#HTML" expanded="true" />
-            <element signature="e#13121#13147#0#HTML" expanded="true" />
-            <element signature="e#13169#13211#0#HTML" expanded="true" />
-            <element signature="e#13291#13317#0#HTML" expanded="true" />
-            <element signature="e#13339#13381#0#HTML" expanded="true" />
-            <element signature="e#13458#13484#0#HTML" expanded="true" />
-            <element signature="e#13506#13548#0#HTML" expanded="true" />
-            <element signature="e#13636#13662#0#HTML" expanded="true" />
-            <element signature="e#13684#13726#0#HTML" expanded="true" />
-            <element signature="e#13814#13840#0#HTML" expanded="true" />
-            <element signature="e#13862#13904#0#HTML" expanded="true" />
-            <element signature="e#13982#14008#0#HTML" expanded="true" />
-            <element signature="e#14030#14072#0#HTML" expanded="true" />
-            <element signature="e#14151#14177#0#HTML" expanded="true" />
-            <element signature="e#14199#14241#0#HTML" expanded="true" />
-            <element signature="e#14317#14343#0#HTML" expanded="true" />
-            <element signature="e#14365#14407#0#HTML" expanded="true" />
-            <element signature="e#14513#14539#0#HTML" expanded="true" />
-            <element signature="e#14561#14603#0#HTML" expanded="true" />
-            <element signature="e#14753#14779#0#HTML" expanded="true" />
-            <element signature="e#14801#14843#0#HTML" expanded="true" />
-            <element signature="e#14919#14945#0#HTML" expanded="true" />
-            <element signature="e#15093#15119#0#HTML" expanded="true" />
-            <element signature="e#15267#15293#0#HTML" expanded="true" />
-            <element signature="e#15472#15498#0#HTML" expanded="true" />
-            <element signature="e#16170#16194#0#HTML" expanded="true" />
-            <element signature="e#16234#16253#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.607142">
-          <caret line="113" column="60" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JointerServer/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/cmdb-management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.107143">
-          <caret line="461" column="43" selection-start-line="461" selection-start-column="43" selection-end-line="461" selection-end-column="43" />
-          <folding>
-            <element signature="e#7790#7816#0#HTML" expanded="true" />
-            <element signature="e#7995#8021#0#HTML" expanded="true" />
-            <element signature="e#8097#8123#0#HTML" expanded="true" />
-            <element signature="e#8201#8227#0#HTML" expanded="true" />
-            <element signature="e#8304#8330#0#HTML" expanded="true" />
-            <element signature="e#8408#8434#0#HTML" expanded="true" />
-            <element signature="e#8511#8537#0#HTML" expanded="true" />
-            <element signature="e#8613#8639#0#HTML" expanded="true" />
-            <element signature="e#8715#8741#0#HTML" expanded="true" />
-            <element signature="e#8818#8844#0#HTML" expanded="true" />
-            <element signature="e#8920#8946#0#HTML" expanded="true" />
-            <element signature="e#9022#9048#0#HTML" expanded="true" />
-            <element signature="e#9126#9152#0#HTML" expanded="true" />
-            <element signature="e#9229#9255#0#HTML" expanded="true" />
-            <element signature="e#9332#9358#0#HTML" expanded="true" />
-            <element signature="e#9436#9462#0#HTML" expanded="true" />
-            <element signature="e#9540#9566#0#HTML" expanded="true" />
-            <element signature="e#9644#9670#0#HTML" expanded="true" />
-            <element signature="e#9748#9774#0#HTML" expanded="true" />
-            <element signature="e#9851#9877#0#HTML" expanded="true" />
-            <element signature="e#10075#10101#0#HTML" expanded="true" />
-            <element signature="e#10256#10282#0#HTML" expanded="true" />
-            <element signature="e#10304#10346#0#HTML" expanded="true" />
-            <element signature="e#10504#10530#0#HTML" expanded="true" />
-            <element signature="e#10552#10594#0#HTML" expanded="true" />
-            <element signature="e#10754#10780#0#HTML" expanded="true" />
-            <element signature="e#10802#10844#0#HTML" expanded="true" />
-            <element signature="e#10924#10950#0#HTML" expanded="true" />
-            <element signature="e#10972#11014#0#HTML" expanded="true" />
-            <element signature="e#11103#11129#0#HTML" expanded="true" />
-            <element signature="e#11151#11193#0#HTML" expanded="true" />
-            <element signature="e#11270#11296#0#HTML" expanded="true" />
-            <element signature="e#11318#11360#0#HTML" expanded="true" />
-            <element signature="e#11448#11474#0#HTML" expanded="true" />
-            <element signature="e#11496#11538#0#HTML" expanded="true" />
-            <element signature="e#11612#11638#0#HTML" expanded="true" />
-            <element signature="e#11660#11702#0#HTML" expanded="true" />
-            <element signature="e#11776#11802#0#HTML" expanded="true" />
-            <element signature="e#11824#11866#0#HTML" expanded="true" />
-            <element signature="e#11940#11966#0#HTML" expanded="true" />
-            <element signature="e#11988#12030#0#HTML" expanded="true" />
-            <element signature="e#12144#12170#0#HTML" expanded="true" />
-            <element signature="e#12192#12234#0#HTML" expanded="true" />
-            <element signature="e#12383#12409#0#HTML" expanded="true" />
-            <element signature="e#12431#12473#0#HTML" expanded="true" />
-            <element signature="e#12619#12645#0#HTML" expanded="true" />
-            <element signature="e#12667#12709#0#HTML" expanded="true" />
-            <element signature="e#12856#12882#0#HTML" expanded="true" />
-            <element signature="e#12904#12946#0#HTML" expanded="true" />
-            <element signature="e#13205#13231#0#HTML" expanded="true" />
-            <element signature="e#13253#13295#0#HTML" expanded="true" />
-            <element signature="e#13455#13481#0#HTML" expanded="true" />
-            <element signature="e#13503#13545#0#HTML" expanded="true" />
-            <element signature="e#13705#13731#0#HTML" expanded="true" />
-            <element signature="e#13753#13795#0#HTML" expanded="true" />
-            <element signature="e#13947#13973#0#HTML" expanded="true" />
-            <element signature="e#14121#14147#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JointerServer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1586" max-vertical-offset="2280">
+          <caret line="114" column="1" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmdb/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <element signature="e#19#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmdb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6020202">
-          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+        <state vertical-scroll-proportion="-18.666666" vertical-offset="10346" max-vertical-offset="12312">
+          <caret line="574" column="31" selection-start-line="574" selection-start-column="31" selection-end-line="574" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5742925" vertical-offset="6144" max-vertical-offset="12350">
+          <caret line="349" column="8" selection-start-line="349" selection-start-column="8" selection-end-line="349" selection-end-column="8" />
+          <folding>
+            <element signature="e#5224#5243#0#HTML" expanded="true" />
+            <element signature="e#7466#7492#0#HTML" expanded="true" />
+            <element signature="e#7653#7679#0#HTML" expanded="true" />
+            <element signature="e#7755#7781#0#HTML" expanded="true" />
+            <element signature="e#7859#7885#0#HTML" expanded="true" />
+            <element signature="e#7963#7989#0#HTML" expanded="true" />
+            <element signature="e#8066#8092#0#HTML" expanded="true" />
+            <element signature="e#8168#8194#0#HTML" expanded="true" />
+            <element signature="e#8270#8296#0#HTML" expanded="true" />
+            <element signature="e#8373#8399#0#HTML" expanded="true" />
+            <element signature="e#8475#8501#0#HTML" expanded="true" />
+            <element signature="e#8577#8603#0#HTML" expanded="true" />
+            <element signature="e#8680#8706#0#HTML" expanded="true" />
+            <element signature="e#8783#8809#0#HTML" expanded="true" />
+            <element signature="e#8887#8913#0#HTML" expanded="true" />
+            <element signature="e#8991#9017#0#HTML" expanded="true" />
+            <element signature="e#9445#9481#0#HTML" expanded="true" />
+            <element signature="e#9633#9659#0#HTML" expanded="true" />
+            <element signature="e#9744#9770#0#HTML" expanded="true" />
+            <element signature="e#9854#9880#0#HTML" expanded="true" />
+            <element signature="e#9966#9992#0#HTML" expanded="true" />
+            <element signature="e#10076#10102#0#HTML" expanded="true" />
+            <element signature="e#10188#10214#0#HTML" expanded="true" />
+            <element signature="e#10301#10327#0#HTML" expanded="true" />
+            <element signature="e#10412#10438#0#HTML" expanded="true" />
+            <element signature="e#10523#10549#0#HTML" expanded="true" />
+            <element signature="e#10635#10661#0#HTML" expanded="true" />
+            <element signature="e#10745#10771#0#HTML" expanded="true" />
+            <element signature="e#10855#10881#0#HTML" expanded="true" />
+            <element signature="e#10967#10993#0#HTML" expanded="true" />
+            <element signature="e#11107#11144#0#HTML" expanded="true" />
+            <element signature="e#12938#12982#0#HTML" expanded="true" />
+            <element signature="e#18857#18881#0#HTML" expanded="true" />
+            <element signature="e#18921#18940#0#HTML" expanded="true" />
+            <element signature="e#19833#19857#0#HTML" expanded="true" />
+            <element signature="e#19897#19916#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

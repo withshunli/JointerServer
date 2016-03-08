@@ -23,7 +23,7 @@ class OptionLogs(models.Model):
 class CmdbConf(models.Model):
     idc = models.CharField(max_length=20)
     ip = models.GenericIPAddressField(unique=True)
-    owner = models.GenericIPAddressField()  # 如资产为虚拟机或Docker容器，该字段用于记录宿主机IP
+    owner = models.GenericIPAddressField(null=True)  # 如资产为虚拟机或Docker容器，该字段用于记录宿主机IP
     sn = models.CharField(max_length=15)
     anum = models.CharField(max_length=10,unique=True)
     type = models.CharField(max_length=15)

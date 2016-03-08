@@ -112,7 +112,7 @@
 
                                         <div class="alert alert-info no-margin fade in">
 
-                                            <form class="form-inline" action="/cmdb" method="GET">
+                                            <form class="form-inline" action="/cmdb/index" method="GET">
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
@@ -159,6 +159,7 @@
                                                         <th nowrap style="text-align:center;">机房</th>
                                                         <th nowrap style="text-align:center;">IP地址</th>
                                                         <th nowrap style="text-align:center;">资产编号</th>
+                                                        <th nowrap style="text-align:center;">SN号</th>
                                                         <th nowrap style="text-align:center;">类型</th>
                                                         <th nowrap style="text-align:center;">型号</th>
                                                         <th nowrap style="text-align:center;">CPU</th>
@@ -168,58 +169,49 @@
                                                         <th nowrap style="text-align:center;">使用人</th>
                                                         <th nowrap style="text-align:center;">使用部门</th>
                                                         <th nowrap style="text-align:center;">Salt</th>
-                                                        <th nowrap style="text-align:center;" colspan="4">操作</th>
+                                                        <th nowrap style="text-align:center;">操作</th>
 													</tr>
 												</thead>
 												<tbody>
+                                                    {% load pagination_tags %}
+                                                    {% autopaginate dataResult 15 %}
+                                                    {% for i in dataResult %}
                                                     <tr>
-                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.94.130" /></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="1" data-title="机房">廊坊机房</a></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="1" data-title="IP地址">172.20.94.130</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">431895</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">Dell 5480 </a></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">Intel 2.5GHz*8</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">32GB</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">350GB</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">布和</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M2-321-K08-19--20">布和</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="1" data-title="运维人">研发一部</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">正常</td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 更多</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(1)"><i class="icon-bar-chart"></i> 日志</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(1)"><i class="icon-camera"></i> 备注</a></td>
+                                                        <td style="text-align:center;width:10px"><input type="checkbox" class="checkboxes" name="ipCheck" value="{{ i.ip }}" /></td>
+                                                        <td nowrap style="text-align:center;">{{ i.idc }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.ip }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.anum }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.sn }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.type }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.model }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.cpu }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.mem }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.disk }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.op }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.rd }}</td>
+                                                        <td nowrap style="text-align:center;">{{ i.dept }}</td>
+                                                        <td nowrap style="text-align:center;"><a class="btn btn-success btn-xs">正常</a></td>
+                                                        <td nowrap style="text-align:center;width:240px">
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#infoMore" onclick="serverDetailFn({{ i.id }})"><i class="fa fa-plus"></i> 更多</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#optionLogs" onclick="optionLogsFn({{ i.id }})"><i class="fa fa-book"></i> 日志</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-camera"></i> 备注</a>
+                                                        </td>
+                                                        <!--<td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick="optionLogsFn(1)"><i class="fa fa-shopping-cart"></i> 日志</a></td>
+                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick="serverRemarkFn(1)"><i class="fa fa-shopping-cart"></i> 备注</a></td>-->
                                                     </tr>
-                                                    <tr>
-                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.94.130" /></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="1" data-title="机房">廊坊机房</a></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="1" data-title="IP地址">172.20.94.130</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">431895</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">Dell 5480 </a></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">Intel 2.5GHz*8</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">32GB</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">350GB</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">布和</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M2-321-K08-19--20">布和</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="1" data-title="运维人">研发一部</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">正常</td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 更多</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(1)"><i class="icon-bar-chart"></i> 日志</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(1)"><i class="icon-camera"></i> 备注</a></td>
-                                                    </tr>
+                                                    {% endfor %}
 												</tbody>
 											</table>
-
 										</div>
 									</div>
 									<!-- end widget content -->
-
 								</div>
 								<!-- end widget div -->
-
+                                <div style="background-color: #d6dde7!important;">
+                                    {% paginate %}
+                                </div>
 							</div>
 							<!-- end widget -->
 
@@ -311,6 +303,46 @@
                             <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产更多信息 -->
+        <div id="infoMore" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">服务器信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverDetailInfo"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产变更日志 -->
+        <div id="#optionLogs" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产日志详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="optionLogsData"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -573,7 +605,7 @@
         $("#optionLogsTip").html("请稍后，数据查询中...");
         $.ajax({
             type:'POST',
-            url:'/cmdb/ajaxOptionLogs/',
+            url:'/cmdb/index/ajaxOptionLogs/',
             data: {"id": serverId},
             success:function(datas){
                 $('#serverLogsData').html(datas);
@@ -594,6 +626,19 @@
             }
         });
     }
+
+    function serverDetailFn(serverId) {
+        $('#serverDetailInfo').html('请稍后，数据查询中...');
+        $.ajax({
+            type:'POST',
+            url:'/cmdb/index/ajaxServerDetail/',
+            data: {id: serverId},
+            //dataType:'json',
+            success:function(datas){
+                $('#serverDetailInfo').html(datas);
+            }
+        });
+    };
 
 </script>
 
