@@ -15,6 +15,7 @@ import time,datetime
 
 # CMDB表格上传文件存放目录
 file_upload = './data/cmdb/upload'
+file_export = './static/download/cmdb/'
 
 def management(request):
     return render_to_response('cmdb-management.html')
@@ -274,7 +275,7 @@ def export(request):
         queryData = request.POST['data']
     except:
         queryData = None
-    sqlData = CmdbConf.objects.values_list('idc','ip','anum','sn','type','model','cpu','mem','disk','position','op','rd','dept','allotReason','attribute','recycle','remark')
+    sqlData = CmdbConf.objects.values_list('idc','ip','anum','sn','type','model','cpu','mem','disk','position','op','rd','dept','useReason','attribute','remark')
 
     if queryData:
         for k,v in eval(queryData).items():
@@ -318,7 +319,7 @@ def export(request):
 
     # 定义表格数据文件存放路径
     dateTime = time.strftime('%Y%m%d%H%M%S')
-    dataFile = "/export/servers/jos_manager/static/download/cmdbData/%s.xls" %dateTime
+    dataFile = "%s/%s.xls" %(file_export,dateTime)
 
     f = xlwt.Workbook(encoding = 'utf-8', style_compression=2) #创建工作簿
 
@@ -341,7 +342,7 @@ def export(request):
     # 更新操作日志
     eventLogs(request.user,'导出','导出了%s台服务器' %len(sqlData))
 
-    data = {'code':0,'data':'<a href="/static/download/cmdbData/%s.xls" target="_blank">数据导出成功，点击下载</a>' %dateTime}
+    data = {'code':0,'data':'<a href="/static/download/cmdb/%s.xls" target="_blank">数据导出成功，点击下载</a>' %dateTime}
     return HttpResponse(json.dumps(data))
 
 def modify(request):

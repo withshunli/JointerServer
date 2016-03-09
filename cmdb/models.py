@@ -40,4 +40,3 @@ class CmdbConf(models.Model):
     attribute = models.CharField(max_length=50,null=True)
     remark = models.CharField(max_length=100,null=True)
     logs = models.ManyToManyField(OptionLogs)
-

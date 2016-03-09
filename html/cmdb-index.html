@@ -125,27 +125,27 @@
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                                                        <input type="text" placeholder="IP地址" name="idc" value="" class="form-control" name="ip" value="" style="width:150px">
+                                                        <input type="text" placeholder="IP地址" name="ip" value="" class="form-control" name="ip" value="" style="width:150px">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                        <input type="text" placeholder="运维人" name="idc" value="" class="form-control" name="op" value="" style="width:100px">
+                                                        <input type="text" placeholder="运维人" name="op" value="" class="form-control" name="op" value="" style="width:100px">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
-                                                        <input type="text" placeholder="使用人" name="idc" value="" class="form-control" name="rd" value="" style="width:100px">
+                                                        <input type="text" placeholder="使用人" name="rd" value="" class="form-control" name="rd" value="" style="width:100px">
                                                     </div>
                                                 </div>
 
                                                 <button type="submit" class="btn btn-default"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
                                                 <a data-toggle="modal" href="#advance" class="btn btn-default"><i class="fa fa-sm fa-fw fa-plus"></i> 高级</a>
-                                                <a data-toggle="modal" href="./" class="btn btn-default"><i class="fa fa-sm fa-fw fa-refresh"></i> 重置</a>
+                                                <a data-toggle="modal" href="/cmdb/index/" class="btn btn-default"><i class="fa fa-sm fa-fw fa-refresh"></i> 重置</a>
                                                 <a data-toggle="modal" href="#exportModal" class="btn btn-default" onclick="ajaxExport()"><i class="fa fa-sm fa-fw fa-upload"></i> 导出</a>
                                             </form>
 
@@ -195,7 +195,7 @@
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="#infoMore" onclick="serverDetailFn({{ i.id }})"><i class="fa fa-plus"></i> 更多</a>
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a>
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="#optionLogs" onclick="optionLogsFn({{ i.id }})"><i class="fa fa-book"></i> 日志</a>
-                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-camera"></i> 备注</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#serverRemark" onclick="serverRemarkFn({{ i.id }})"><i class="fa fa-camera"></i> 备注</a>
                                                         </td>
                                                         <!--<td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a></td>
                                                         <td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick="optionLogsFn(1)"><i class="fa fa-shopping-cart"></i> 日志</a></td>
@@ -328,8 +328,8 @@
         </div>
 
         <!-- 资产变更日志 -->
-        <div id="#optionLogs" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
-            <div class="modal-dialog" style="width:450px">
+        <div id="optionLogs" class="modal fade" tabindex="-1" data-width="950" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:950px">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -337,7 +337,20 @@
                     </div>
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-12" id="optionLogsData"></div>
+                            <div class="col-md-12">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th style="text-align: center;width:8%">事件</th>
+                                        <th style="text-align: center;width:10%">操作</th>
+                                        <th style="text-align: center;">变更内容</th>
+                                        <th style="text-align: center;width:18%">时间</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;" id="serverLogsData">
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -346,6 +359,47 @@
                 </div>
             </div>
         </div>
+
+        <!-- 资产备注 -->
+        <div id="serverRemark" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产备注信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverRemarkText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel导出 -->
+        <div id="exportModal" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Excel 资产数据导出</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="exportText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 <script>
 
@@ -498,7 +552,7 @@
                 {
                     type: 'post',
                     dataType: 'json',
-                    url : '/cmdb/export/',
+                    url : '/cmdb/index/export/',
                     data : {'data':"{{queryData |safe}}"},
                     timeout:100000,
                     success: function (datas)
@@ -619,7 +673,7 @@
         $("#serverRemarkText").html("请稍后，数据查询中...");
         $.ajax({
             type:'POST',
-            url:'/cmdb/ajaxServerRemark/',
+            url:'/cmdb/index/ajaxServerRemark/',
             data: {"id": serverId},
             success:function(datas){
                 $('#serverRemarkText').html(datas);
