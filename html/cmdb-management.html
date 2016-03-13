@@ -112,7 +112,7 @@
 
                                         <div class="alert alert-info no-margin fade in">
 
-                                            <form class="form-inline" action="/cmdb" method="GET">
+                                            <form class="form-inline" action="/cmdb/management" method="GET">
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
@@ -125,21 +125,21 @@
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-                                                        <input type="text" placeholder="IP地址" name="idc" value="" class="form-control" name="ip" value="" style="width:150px">
+                                                        <input type="text" placeholder="IP地址" name="ip" value="" class="form-control" name="ip" value="" style="width:150px">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                        <input type="text" placeholder="运维人" name="idc" value="" class="form-control" name="op" value="" style="width:100px">
+                                                        <input type="text" placeholder="运维人" name="op" value="" class="form-control" name="op" value="" style="width:100px">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <div class="input-group input-group-md">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
-                                                        <input type="text" placeholder="使用人" name="idc" value="" class="form-control" name="rd" value="" style="width:100px">
+                                                        <input type="text" placeholder="使用人" name="rd" value="" class="form-control" name="rd" value="" style="width:100px">
                                                     </div>
                                                 </div>
 
@@ -160,7 +160,6 @@
                                                         <th nowrap style="text-align:center;"><a href="#relayData" onclick="btnCheckAll(1)" >全</a>/<a href="#relayData" onclick="btnCheckAll(0)" >反</a></th>
                                                         <th nowrap style="text-align:center;">机房</th>
                                                         <th nowrap style="text-align:center;">IP地址</th>
-                                                        <th nowrap style="text-align:center;">宿主机</th>
                                                         <th nowrap style="text-align:center;">资产编号</th>
                                                         <th nowrap style="text-align:center;">SN号</th>
                                                         <th nowrap style="text-align:center;">类型</th>
@@ -175,50 +174,54 @@
                                                         <th nowrap style="text-align:center;">分配时间</th>
                                                         <th nowrap style="text-align:center;">分配原因</th>
                                                         <th nowrap style="text-align:center;">资产属性</th>
-                                                        <th nowrap style="text-align:center;">再分配</th>
-                                                        <th nowrap style="text-align:center;" colspan="3">操作</th>
+                                                        <th nowrap style="text-align:center;">操作</th>
 													</tr>
 												</thead>
 												<tbody>
+                                                    {% load pagination_tags %}
+                                                    {% autopaginate dataResult 15 %}
+                                                    {% for i in dataResult %}
                                                     <tr>
-                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="172.20.94.130" /></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="1" data-title="机房">廊坊联通磐石机房</a></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="1" data-title="IP地址">172.20.94.130</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">431895</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">2102310YQD10F70</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">物理机</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">HuaweiRH2288V3</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="DC2-M2-321-K08-19--20">DC2-M2-...</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="1" data-title="运维人">李志明</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="1" data-title="使用人"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="1" data-title="部门"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="allotTime" data-pk="1" data-title="分配时间"">2016年02月25日</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="textarea" id="allotReason" data-pk="1" data-title="分配原因"></td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="1" data-title="资产属性">大硬盘服务器</td>
-                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="recycle" data-type="select" id="recycle" data-pk="1" data-title="再分配">是</td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="" onclick=""><i class="icon-flag"></i> 应用</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#optionLogs" onclick="optionLogsFn(1)"><i class="icon-bar-chart"></i> 日志</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" href="#serverRemark" onclick="serverRemarkFn(1)"><i class="icon-camera"></i> 备注</a></td>
+                                                        <td style="text-align:center;"><input type="checkbox" class="checkboxes" name="ipCheck" value="{{ i.ip }}" /></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="idc" data-pk="{{ i.id }}" data-title="机房">{{ i.idc }}</a></td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="ip" data-pk="{{ i.id }}" data-title="IP地址">{{ i.ip }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.anum }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.sn }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.type }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.model }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.cpu }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.mem }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d">{{ i.disk }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" title="{{ i.position }}">{{ i.position }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="op" data-pk="{{ i.id }}" data-title="运维人">{{ i.op }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="rd" data-pk="{{ i.id }}" data-title="使用人">{{ i.rd }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="dept" data-pk="{{ i.id }}" data-title="部门">{{ i.dept }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="combodate" data-format="YYYY-MM-DD" data-viewformat="YYYY年MM月DD日" data-template="YYYY 年 MM 月 DD 日" id="useTime" data-pk="{{ i.id }}" data-title="分配时间"">{{i.useTime |date:"Y年m月d日"}}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="useReason" data-pk="{{ i.id }}" data-title="分配原因">{{ i.useReason }}</td>
+                                                        <td nowrap style="text-align:center;"><a href="#cmdbTable" style="text-decoration:none;color:#10181d" class="editTable" data-type="text" id="attribute" data-pk="{{ i.id }}" data-title="资产属性">{{ i.attribute }}</td>
+                                                        <td nowrap style="text-align:center;width:240px">
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#optionLogs" onclick="optionLogsFn({{ i.id }})"><i class="fa fa-book"></i> 日志</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#serverRemark" onclick="serverRemarkFn({{ i.id }})"><i class="fa fa-camera"></i> 备注</a>
+                                                            <a data-toggle="modal" class="btn btn-danger btn-xs" href="#ipDelete" onclick="ipDeleteFn('{{ i.ip }}')"><i class="fa fa-remove"></i> 删除</a>
+                                                        </td>
                                                     </tr>
+                                                    {% endfor %}
 												</tbody>
 											</table>
 
 										</div>
 									</div>
 									<!-- end widget content -->
-
 								</div>
 								<!-- end widget div -->
-
+                                <div style="background-color: #d6dde7!important;">
+                                    {% paginate %}
+                                </div>
 							</div>
 							<!-- end widget -->
-
 						</article>
 						<!-- WIDGET END -->
-
 					</div>
 
 					<!-- end row -->
@@ -286,16 +289,6 @@
                                             <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="资产属性"></label>
                                         </div>
                                     </div>
-                                    <!--<div class="form-group">
-                                        <div class="icon-addon addon-md">
-                                            <select class="form-control" name="recycle">
-                                                <option>再分配</option>
-                                                <option >是</option>
-                                                <option >否</option>
-                                            </select>
-                                            <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="再分配"></label>
-                                        </div>
-                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -323,6 +316,120 @@
                     <div class="modal-footer">
                         <a class="btn green" onclick="ajaxFileUpload()"><i class="fa fa-sm fa-fw fa-search"></i> 上传</a>
                         <button type="button" data-dismiss="modal" class="btn">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产更多信息 -->
+        <div id="infoMore" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">服务器信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverDetailInfo"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产变更日志 -->
+        <div id="optionLogs" class="modal fade" tabindex="-1" data-width="950" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:950px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产日志详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th style="text-align: center;width:8%">事件</th>
+                                        <th style="text-align: center;width:10%">操作</th>
+                                        <th style="text-align: center;">变更内容</th>
+                                        <th style="text-align: center;width:18%">时间</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;" id="serverLogsData">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产备注 -->
+        <div id="serverRemark" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产备注信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverRemarkText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel导出 -->
+        <div id="exportModal" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Excel 资产数据导出</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="exportText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产删除 -->
+        <div id="ipDelete" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">确认删除</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="ipConfirm"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-warning" onclick="ipConfirmFn()"><i class="fa fa-sm fa-fw fa-search"></i> 确认</a>
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
                     </div>
                 </div>
             </div>
@@ -404,7 +511,7 @@
     function enable() {
         $(".enable").html('<i class="icon-signout"></i> 退出编辑')
         $('.enable').attr("onclick","disableEdit()");
-        $.fn.editable.defaults.url = '/cmdb/modify/';
+        $.fn.editable.defaults.url = '/cmdb/management/modify/';
         $(".editTable").editable({
             ajaxOptions: {
                 dataType: 'json' //assuming json response
@@ -479,7 +586,7 @@
                 {
                     type: 'post',
                     dataType: 'json',
-                    url : '/cmdb/export/',
+                    url : '/cmdb/index/export/',
                     data : {'data':"{{queryData |safe}}"},
                     timeout:100000,
                     success: function (datas)
@@ -586,7 +693,7 @@
         $("#optionLogsTip").html("请稍后，数据查询中...");
         $.ajax({
             type:'POST',
-            url:'/cmdb/ajaxOptionLogs/',
+            url:'/cmdb/index/ajaxOptionLogs/',
             data: {"id": serverId},
             success:function(datas){
                 $('#serverLogsData').html(datas);
@@ -600,10 +707,27 @@
         $("#serverRemarkText").html("请稍后，数据查询中...");
         $.ajax({
             type:'POST',
-            url:'/cmdb/ajaxServerRemark/',
+            url:'/cmdb/index/ajaxServerRemark/',
             data: {"id": serverId},
             success:function(datas){
                 $('#serverRemarkText').html(datas);
+            }
+        });
+    }
+
+    function ipDeleteFn(serverIp) {
+        ipDeleteStr = serverIp;
+        $("#ipConfirm").html("确认要删除 "+serverIp+" 吗？");
+    }
+
+    function ipConfirmFn() {
+        $.ajax({
+            type:'POST',
+            url:'/cmdb/management/ajaxServerDelete/',
+            data: {"ip": ipDeleteStr},
+            dataType: "json",
+            success:function(datas){
+                location.reload()
             }
         });
     }

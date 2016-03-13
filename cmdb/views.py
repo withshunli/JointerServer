@@ -18,6 +18,13 @@ file_upload = './data/cmdb/upload'
 file_export = './static/download/cmdb/'
 
 def management(request):
+    sqlData = CmdbConf.objects.all()
+    reData = {
+        "request" : request,
+        "dataResult" : sqlData,
+        "queryData" : queryData
+        #"size" : size
+    }
     return render_to_response('cmdb-management.html')
 
 '''
@@ -72,6 +79,8 @@ def index(request):
     except:
         size = 15
 
+    # 获取访问路径，用于区分CMDB首页及配置管理页面
+    pathTag = request.path_info.split('/')[2]
     sqlData = CmdbConf.objects.all()
     queryData = {}
     if query:
@@ -128,7 +137,11 @@ def index(request):
         "queryData" : queryData,
         "size" : size
     }
-    return render_to_response('cmdb-index.html',reData)
+
+    if pathTag == 'index':
+        return render_to_response('cmdb-index.html',reData)
+    elif pathTag == 'management':
+        return render_to_response('cmdb-management.html',reData)
 
 def upload(request):
     def handle_uploaded_file(f):
@@ -398,18 +411,18 @@ def modify(request):
             data = {"status":"success","msg":"update complete."}
         except:
             data = {"status":"error","msg":"错误：请检查输入内容"}
-    elif object == 'allotTime':
+    elif object == 'useTime':
         try:
-            oldData = sqlData.allotTime
-            sqlData.allotTime = value
+            oldData = sqlData.useTime
+            sqlData.useTime = value
             sqlData.save()
             data = {"status":"success","msg":"update complete."}
         except:
             data = {"status":"error","msg":"错误：请检查输入内容"}
-    elif object == 'allotReason':
+    elif object == 'useReason':
         try:
-            oldData = sqlData.allotReason
-            sqlData.allotReason = value
+            oldData = sqlData.useReason
+            sqlData.useReason = value
             sqlData.save()
             data = {"status":"success","msg":"update complete."}
         except:
@@ -641,3 +654,12 @@ def ajaxServerDetail(request):
 
     return HttpResponse(dataTable)
 
+# Ajax服务器变资产删除操作
+def ajaxServerDelete(request):
+    serverIp = request.POST['ip']
+    sqlData = CmdbConf.objects.get(ip=serverIp)
+    sqlData.delete()
+
+    msg = {"status":0,"data":"该条资产信息已经被成功删除"}
+
+    return HttpResponse(json.dumps(msg))

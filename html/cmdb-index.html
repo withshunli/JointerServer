@@ -152,7 +152,7 @@
 										</div>
 										<div class="table-responsive">
 
-											<table class="table table-bordered table-striped">
+											<table class="table table-bordered table-striped table-hover">
 												<thead>
 													<tr>
                                                         <th nowrap style="text-align:center;"><a href="#" onclick="btnCheckAll(1)" >全</a>/<a href="#" onclick="btnCheckAll(0)" >反</a></th>
@@ -174,7 +174,7 @@
 												</thead>
 												<tbody>
                                                     {% load pagination_tags %}
-                                                    {% autopaginate dataResult 15 %}
+                                                    {% autopaginate dataResult 16 %}
                                                     {% for i in dataResult %}
                                                     <tr>
                                                         <td style="text-align:center;width:10px"><input type="checkbox" class="checkboxes" name="ipCheck" value="{{ i.ip }}" /></td>
@@ -191,27 +191,40 @@
                                                         <td nowrap style="text-align:center;">{{ i.rd }}</td>
                                                         <td nowrap style="text-align:center;">{{ i.dept }}</td>
                                                         <td nowrap style="text-align:center;"><a class="btn btn-success btn-xs">正常</a></td>
-                                                        <td nowrap style="text-align:center;width:240px">
-                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#infoMore" onclick="serverDetailFn({{ i.id }})"><i class="fa fa-plus"></i> 更多</a>
+                                                        <td nowrap style="text-align:center;width:300px">
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#infoMore" onclick="serverDetailFn({{ i.id }})"><i class="fa fa-plus"></i> 详细</a>
+                                                            <div class="btn-group">
+                                                                <button class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                    工具 <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">系统状态</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">进程查询</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">网络状态</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a>
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="#optionLogs" onclick="optionLogsFn({{ i.id }})"><i class="fa fa-book"></i> 日志</a>
                                                             <a data-toggle="modal" class="btn btn-info btn-xs" href="#serverRemark" onclick="serverRemarkFn({{ i.id }})"><i class="fa fa-camera"></i> 备注</a>
                                                         </td>
-                                                        <!--<td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 应用</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick="optionLogsFn(1)"><i class="fa fa-shopping-cart"></i> 日志</a></td>
-                                                        <td nowrap style="text-align:center;"><a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick="serverRemarkFn(1)"><i class="fa fa-shopping-cart"></i> 备注</a></td>-->
                                                     </tr>
                                                     {% endfor %}
 												</tbody>
 											</table>
+                                            <div style="background-color: #d6dde7;height:55px;padding:0 0 0 8px">
+                                                {% paginate %}
+                                            </div>
 										</div>
 									</div>
 									<!-- end widget content -->
 								</div>
 								<!-- end widget div -->
-                                <div style="background-color: #d6dde7!important;">
-                                    {% paginate %}
-                                </div>
 							</div>
 							<!-- end widget -->
 
@@ -285,16 +298,6 @@
                                             <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="资产属性"></label>
                                         </div>
                                     </div>
-                                    <!--<div class="form-group">
-                                        <div class="icon-addon addon-md">
-                                            <select class="form-control" name="recycle">
-                                                <option>再分配</option>
-                                                <option >是</option>
-                                                <option >否</option>
-                                            </select>
-                                            <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="再分配"></label>
-                                        </div>
-                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -403,65 +406,6 @@
 
 <script>
 
-    function tipOn(valueHTML) {
-        document.getElementById('myModal').className = 'amodal';
-        document.getElementById("myText").innerHTML = valueHTML;
-        document.getElementById('shade').className = 'amodal-backdrop';
-    }
-
-    function tipOff() {
-        document.getElementById('myModal').className = 'amodal hide';
-        document.getElementById('shade').className = 'amodal-backdrop hide';
-    }
-
-    function fadeIn() {
-        var valueHTML = ""
-        var sysIp = document.getElementById("sysIp").value;
-        if (sysIp == ''){
-            valueHTML = "请输入需要查询的关键字";
-            tipOn(valueHTML);
-            return false;
-        }
-
-        /*if(/.*[\u4e00-\u9fa5]+.*$/.test(sysIp))
-         {
-         valueHTML = "非法的IP地址，请重新输入";
-         tipOn(valueHTML);
-         return false;
-         }*/
-        document.getElementById('mission_create').submit();
-    }
-
-    function hostCp() {
-        var ipList_num = ''
-        var ipListAll_num = ''
-        var ipList = document.getElementsByName("ipList");
-        var ipListAll = document.getElementsByName("ipListAll");
-        for(var i=0;i<ipList.length;i++){
-            if(ipList[i].checked){
-                ipList_num = ipList[i].value
-            }
-        }
-        for(var i=0;i<ipListAll.length;i++){
-            if(ipListAll[i].checked){
-                ipListAll_num = ipListAll[i].value
-            }
-        }
-        if (ipList_num.length ==0 && ipListAll_num.length ==0) {
-            valueHTML = "请至少勾选一个IP地址或选择【执行全部】";
-            tipOn(valueHTML);
-            return false;
-        }
-        else{
-            document.getElementById('hostCp_create').submit();
-        }
-    }
-
-    /*jQuery(document).ready(function() {
-     App.init();
-     TableManaged.init();
-     });*/
-
     function pageSize() {
         var strUrl = document.location.search;
         var objS = document.getElementById("pageSize");
@@ -472,77 +416,6 @@
         else {
             self.location.href=strUrl + "&size=" + size
         }
-    }
-
-    function enable() {
-        $(".enable").html('<i class="icon-signout"></i> 退出编辑')
-        $('.enable').attr("onclick","disableEdit()");
-        $.fn.editable.defaults.url = '/cmdb/modify/';
-        $(".editTable").editable({
-            ajaxOptions: {
-                dataType: 'json' //assuming json response
-            },
-            success: function(response, newValue) {
-                if(response.status == 'error') {
-                    return response.msg;
-                }
-            },
-            combodate: {
-                minYear: 2000,
-                maxYear: 2018,
-                minuteStep: 1
-            }
-        });
-
-        $(".recycle").editable({
-            value: '',
-            source: [
-                {value: '是', text: '是'},
-                {value: '否', text: '否'}
-            ],
-            ajaxOptions: {
-                dataType: 'json' //assuming json response
-            },
-            success: function(response, newValue) {
-                if(response.status == 'error') {
-                    return response.msg;
-                }
-            }
-        });
-    };
-
-    function disableEdit() {
-        $(".editTable").editable('destroy');
-        $(".recycle").editable('destroy');
-        $(".enable").html('<i class="icon-edit"></i> 在线编辑')
-        $('.enable').attr("onclick","enable()");
-    };
-
-    $('#fileUpload').click(function() {
-        $("#optionText").html('');
-    });
-
-    function ajaxFileUpload() {
-        var upFile = document.getElementById('file1');
-        if (upFile.value == '') {
-            $("#optionText").html('错误：未检测到文件，请选择!');
-            return false;
-        }
-        $("#optionText").html('正在上传，请稍后...');
-        $.ajaxFileUpload
-        (
-                {
-                    url: '/cmdb/upload/',
-                    secureuri: false,
-                    fileElementId: 'file1',
-                    dataType: 'json',
-                    success: function(datas)
-                    {
-                        $("#optionText").html(datas.msg);
-                    }
-                }
-        )
-        return false;
     }
 
     function ajaxExport() {
@@ -575,83 +448,6 @@
         else if (checkTag ==0) {
             $("[class = checkboxes]:checkbox").attr("checked", false);
         }
-    }
-
-    edit_count=1
-    function addItems() {
-        edit_count +=1
-        $("#addItems").append("<br /><div class='form-inline'><div class='form-group'><div class='input-icon'><select class='form-control'name='recycle'id='edit_select_" + edit_count + "'><option value=''>请选择批量修改项</option><option value='idc'>机房</option><option value='model'>型号</option><option value='cpu'>CPU</option><option value='mem'>内存</option><option value='disk'>硬盘</option><option value='op'>运维人</option><option value='rd'>使用人</option><option value='dept'>使用部门</option><option value='alloatTime'>分配时间</option><option value='allotReason'>分配原因</option><option value='attribute'>资产属性</option><option value='recycle'>再分配</option><option value='remark'>备注</option></select></div></div>&nbsp;<div class='form-group'><div class='input-icon'><i class='icon-tags'></i><input type='text'class='form-control'placeholder='新的修改内容'id='edit_input_" + edit_count + "'></div></div></div>")
-    }
-
-    // 清空ajax批量修改区域提示文字
-    function opText() {
-        $("#opText").html();
-    }
-
-    function bulkPost() {
-        // 获取勾选IP地址
-        var chk_value =[];
-        var jsonData = {};
-        var myData = '';
-        $('input[name="ipCheck"]:checked').each(function(){
-            chk_value.push($(this).val());
-        });
-
-        if (chk_value.length ==0){
-            alert("请勾选将要修改的IP地址！");
-            return false;
-        }
-        else {
-            jsonData['ipData'] = chk_value
-        }
-
-        for(i=1;i<=edit_count;i++){
-            //开始获取批量修改项
-            var item = $("#edit_select_"+i).val()
-            if (item.length == 0){
-                continue
-            }
-            else{
-                var values = $("#edit_input_"+i).val();
-                jsonData[item] = values
-                myData = JSON.stringify(jsonData);
-            }
-        }
-
-        if (myData.length ==0) {
-            alert("请至少编辑一项修改类目！");
-            return false;
-        }
-
-        $("#opText").html('<br />请稍后，正在提交修改...');
-        var url = "/cmdb/bulkPost/";
-        $.ajax({
-            type : "POST",
-            dataType: "json",
-            url : url,
-            data : {"editItems":myData},
-            timeout:120000,
-            success:function(dates){
-                $("#opText").html('<br />' + dates.msg);
-                /*if (dates.code==0) {
-                 window.location = "/service/disk/result/?id="+dates.data;
-                 }
-                 if (dates.code==1) {
-                 $("#opTxt").html(dates.data);
-                 }
-                 if (dates.code==2) {
-                 $("#opTxt").html(dates.data);
-                 }*/
-            },
-            complete : function(XMLHttpRequest,status) {
-                if(status=='timeout') {
-                    $("#opTxt").html('提示：查询超时.');
-                }
-            },
-            error: function() {
-                $("#opTxt").html('提示：系统异常.');
-            }
-        });
     }
 
     function optionLogsFn(serverId) {

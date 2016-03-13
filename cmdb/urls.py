@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^index/ajaxOptionLogs/', ajaxOptionLogs),
     url(r'^index/ajaxServerRemark/', ajaxServerRemark),
     url(r'^index/export/', export),
-    url(r'^management$', management),
+    url(r'^management$', index),
     url(r'^management/upload/$', upload),
+    url(r'^management/modify/$', modify),
+    url(r'^management/ajaxServerDelete/$', ajaxServerDelete),
 ]
