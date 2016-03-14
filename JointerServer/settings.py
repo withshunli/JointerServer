@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'pagination',
     'cmdb',
     'dashboard',
+    'relay',
 )
 
 MIDDLEWARE_CLASSES = (

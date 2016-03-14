@@ -1,0 +1,247 @@
+{% include 'header.html' %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>Home</li><li>Tables</li><li>Normal Tables</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-table fa-fw "></i>
+								堡垒机管理
+							<span>>
+								监控中心
+							</span>
+						</h1>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+						<ul id="sparks" class="">
+							<li class="sparks-info">
+								<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
+								<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+									1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+								<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+								<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+					<div class="row">
+
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>堡垒机服务器登录列表</h2>
+								</header>
+
+								<!-- widget div-->
+								<div>
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+
+                                        <div class="alert alert-info no-margin fade in">
+
+                                            <form class="form-inline" action="/cmdb/index/" method="GET">
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                                        <input type="text" placeholder="机房" name="idc" value="" class="form-control" style="width:100px">
+                                                        <input type="text" class="hidden" name="query" value="1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                                        <input type="text" placeholder="IP地址" name="idc" value="" class="form-control" name="ip" value="" style="width:150px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input type="text" placeholder="运维人" name="idc" value="" class="form-control" name="op" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
+                                                        <input type="text" placeholder="使用人" name="idc" value="" class="form-control" name="rd" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-default"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
+                                                <a data-toggle="modal" href="#" id="dialog_link" class="btn btn-default"><i class="fa fa-sm fa-fw fa-plus"></i> 高级</a>
+                                                <a data-toggle="modal" href="./" class="btn btn-default"><i class="fa fa-sm fa-fw fa-refresh"></i> 重置</a>
+                                                <a data-toggle="modal" href="#exportModal" class="btn btn-default" onclick="ajaxExport()"><i class="fa fa-sm fa-fw fa-upload"></i> 导出</a>
+                                                <a data-toggle="modal" href="#optionModal" class="btn btn-default" id="fileUpload"><i class="fa fa-sm fa-fw fa-download"></i> 导入</a>
+                                                <a class="btn btn-default enable" onclick="enable()"><i class="fa fa-sm fa-fw fa-edit"></i> 在线编辑</a>
+                                            </form>
+
+										</div>
+										<div class="table-responsive">
+
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+                                                        <th style="text-align: center;">id</th>
+                                                        <th style="text-align: center;">用户名</th>
+                                                        <th style="text-align: center;">IP地址</th>
+                                                        <th style="text-align: center;">系统用户</th>
+                                                        <th style="text-align: center;">当前状态</th>
+                                                        <th style="text-align: center;">连接时间</th>
+                                                        <th style="text-align: center;">结束时间</th>
+                                                        <th style="text-align: center;">权限剩余时间</th>
+                                                        <th style="text-align: center;" colspan="3">操作</th>
+													</tr>
+												</thead>
+												<tbody>
+                                                    <tr>
+                                                        <td style="text-align:center;">2817</td>
+                                                        <td style="text-align:center;">abuve</td>
+                                                        <td style="text-align:center;">10.8.120.12</td>
+                                                        <td style="text-align:center;">admin</td>
+                                                        <td style="text-align:center;">当前在线</td>
+                                                        <td style="text-align:center;">2016年1月16日 14:10</td>
+                                                        <td style="text-align:center;">-</td>
+                                                        <td style="text-align:center;">1天5小时6分20秒</td>
+                                                        <td style="text-align:center;"><button class="btn btn-danger btn-xs">强制中断</button></td>
+                                                        <td style="text-align:center;"><button class="btn btn-primary btn-xs" id="serverLogsBtn" serverId="">实时监控</button></td>
+                                                        <td style="text-align:center;"><button class="btn btn-info btn-xs" id="serverDetailBtn" serverId="">命令统计</button></td>
+                                                    </tr>
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+									<!-- end widget content -->
+
+								</div>
+								<!-- end widget div -->
+
+							</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+<script>
+
+    $(document).ready(function() {
+        // Dialog click
+        $('#dialog_link').click(function () {
+            $('#dialog_simple').dialog('open');
+            return false;
+
+        });
+
+        $('#dialog_simple').dialog({
+            autoOpen: false,
+            width: 600,
+            resizable: false,
+            modal: true,
+            title: "<div class='widget-header'><h4><i class='fa fa-warning'></i> Empty the recycle bin?</h4></div>",
+            buttons: [{
+                html: "<i class='fa fa-trash-o'></i>&nbsp; Delete all items",
+                "class": "btn btn-danger",
+                click: function () {
+                    $(this).dialog("close");
+                }
+            }, {
+                html: "<i class='fa fa-times'></i>&nbsp; Cancel",
+                "class": "btn btn-default",
+                click: function () {
+                    $(this).dialog("close");
+                }
+            }]
+        });
+    });
+
+</script>
+
+{% include 'footer.html' %}
