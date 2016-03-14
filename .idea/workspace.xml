@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02213760-abd0-4625-95ef-1d230b43a181" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/cmdb-index.html" afterPath="$PROJECT_DIR$/html/cmdb-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/cmdb-management.html" afterPath="$PROJECT_DIR$/html/cmdb-management.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/footer.html" afterPath="$PROJECT_DIR$/html/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/header.html" afterPath="$PROJECT_DIR$/html/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/urls.py" afterPath="$PROJECT_DIR$/cmdb/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmdb/views.py" afterPath="$PROJECT_DIR$/cmdb/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JointerServer.iws" />
@@ -40,7 +34,7 @@
       <file leaf-file-name="cmdb-index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5172415" vertical-offset="8459" max-vertical-offset="9500">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8721" max-vertical-offset="9500">
               <caret line="459" column="36" selection-start-line="459" selection-start-column="36" selection-end-line="459" selection-end-column="36" />
               <folding />
             </state>
@@ -87,12 +81,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.642857" vertical-offset="95" max-vertical-offset="1976">
-              <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-              <folding />
+            <state vertical-scroll-proportion="0.727707" vertical-offset="1519" max-vertical-offset="2394">
+              <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +97,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmdb/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="627">
               <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
@@ -120,40 +117,19 @@
       <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.928572" vertical-offset="2157" max-vertical-offset="3040">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2157" max-vertical-offset="3040">
               <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdb-management.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cmdb-management.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/cmdb-management.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31794873" vertical-offset="13513" max-vertical-offset="14098">
-              <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
-              <folding>
-                <element signature="e#10107#10133#0#HTML" expanded="true" />
-                <element signature="e#10285#10311#0#HTML" expanded="true" />
-                <element signature="e#10545#10571#0#HTML" expanded="true" />
-                <element signature="e#10849#10891#0#HTML" expanded="true" />
-                <element signature="e#15114#15158#0#HTML" expanded="true" />
-                <element signature="e#21340#21364#0#HTML" expanded="true" />
-                <element signature="e#21404#21423#0#HTML" expanded="true" />
-                <element signature="e#22315#22339#0#HTML" expanded="true" />
-                <element signature="e#22379#22398#0#HTML" expanded="true" />
-                <element signature="e#23052#23087#0#HTML" expanded="true" />
-                <element signature="e#23140#23176#0#HTML" expanded="true" />
-                <element signature="e#23229#23256#0#HTML" expanded="true" />
-                <element signature="e#23311#23347#0#HTML" expanded="true" />
-                <element signature="e#23486#23513#0#HTML" expanded="true" />
-                <element signature="e#24091#24115#0#HTML" expanded="true" />
-                <element signature="e#24155#24174#0#HTML" expanded="true" />
-                <element signature="e#25069#25093#0#HTML" expanded="true" />
-                <element signature="e#25133#25152#0#HTML" expanded="true" />
-                <element signature="e#26041#26065#0#HTML" expanded="true" />
-                <element signature="e#26105#26124#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-20.5" vertical-offset="12878" max-vertical-offset="14098">
+              <caret line="708" column="24" selection-start-line="708" selection-start-column="24" selection-end-line="708" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,11 +160,11 @@
         <option value="$PROJECT_DIR$/cmdb/models.py" />
         <option value="$PROJECT_DIR$/html/footer.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
-        <option value="$PROJECT_DIR$/html/header.html" />
         <option value="$PROJECT_DIR$/html/cmdb-index.html" />
         <option value="$PROJECT_DIR$/cmdb/urls.py" />
         <option value="$PROJECT_DIR$/cmdb/views.py" />
         <option value="$PROJECT_DIR$/html/cmdb-management.html" />
+        <option value="$PROJECT_DIR$/html/header.html" />
       </list>
     </option>
   </component>
@@ -226,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -500,7 +477,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -804,7 +780,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -813,7 +789,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27742615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27742615" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -854,9 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="171">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,7 +837,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1273" max-vertical-offset="2052">
           <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +894,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -940,9 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -988,7 +964,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,9 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="893">
           <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="e#19#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,17 +1175,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.642857" vertical-offset="95" max-vertical-offset="1976">
-          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/cmdb-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5172415" vertical-offset="8459" max-vertical-offset="9500">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8721" max-vertical-offset="9500">
           <caret line="459" column="36" selection-start-line="459" selection-start-column="36" selection-end-line="459" selection-end-column="36" />
           <folding />
         </state>
@@ -1218,7 +1185,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.928572" vertical-offset="2157" max-vertical-offset="3040">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2157" max-vertical-offset="3040">
           <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
           <folding />
         </state>
@@ -1242,29 +1209,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/cmdb-management.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31794873" vertical-offset="13513" max-vertical-offset="14098">
-          <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.5" vertical-offset="12878" max-vertical-offset="14098">
+          <caret line="708" column="24" selection-start-line="708" selection-start-column="24" selection-end-line="708" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.727707" vertical-offset="1519" max-vertical-offset="2394">
+          <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
           <folding>
-            <element signature="e#10107#10133#0#HTML" expanded="true" />
-            <element signature="e#10285#10311#0#HTML" expanded="true" />
-            <element signature="e#10545#10571#0#HTML" expanded="true" />
-            <element signature="e#10849#10891#0#HTML" expanded="true" />
-            <element signature="e#15114#15158#0#HTML" expanded="true" />
-            <element signature="e#21340#21364#0#HTML" expanded="true" />
-            <element signature="e#21404#21423#0#HTML" expanded="true" />
-            <element signature="e#22315#22339#0#HTML" expanded="true" />
-            <element signature="e#22379#22398#0#HTML" expanded="true" />
-            <element signature="e#23052#23087#0#HTML" expanded="true" />
-            <element signature="e#23140#23176#0#HTML" expanded="true" />
-            <element signature="e#23229#23256#0#HTML" expanded="true" />
-            <element signature="e#23311#23347#0#HTML" expanded="true" />
-            <element signature="e#23486#23513#0#HTML" expanded="true" />
-            <element signature="e#24091#24115#0#HTML" expanded="true" />
-            <element signature="e#24155#24174#0#HTML" expanded="true" />
-            <element signature="e#25069#25093#0#HTML" expanded="true" />
-            <element signature="e#25133#25152#0#HTML" expanded="true" />
-            <element signature="e#26041#26065#0#HTML" expanded="true" />
-            <element signature="e#26105#26124#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
