@@ -15,10 +15,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from application.views import *
+
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^dashboard/', include('dashboard.urls')),
-    url(r'^cmdb/', include('cmdb.urls')),
-    url(r'^application/', include('application.urls')),
-    url(r'^relay/', include('relay.urls')),
+    url(r'^index', index),
+    url(r'^management', management),
 ]

@@ -1,0 +1,383 @@
+{% include 'header.html' %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>Home</li><li>Tables</li><li>Normal Tables</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-table fa-fw "></i>
+								应用管理
+							<span>>
+								应用列表
+							</span>
+						</h1>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+						<ul id="sparks" class="">
+							<li class="sparks-info">
+								<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
+								<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+									1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+								<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+								<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+					<div class="row">
+
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>应用信息列表</h2>
+								</header>
+
+								<!-- widget div-->
+								<div>
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+
+                                        <div class="alert alert-info no-margin fade in">
+
+                                            <form class="form-inline" action="/cmdb/index" method="GET">
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                                        <input type="text" placeholder="机房" name="idc" value="" class="form-control" style="width:100px">
+                                                        <input type="text" class="hidden" name="query" value="1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                                        <input type="text" placeholder="IP地址" name="ip" value="" class="form-control" name="ip" value="" style="width:150px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input type="text" placeholder="运维人" name="op" value="" class="form-control" name="op" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-md">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-glass"></i></span>
+                                                        <input type="text" placeholder="使用人" name="rd" value="" class="form-control" name="rd" value="" style="width:100px">
+                                                    </div>
+                                                </div>
+
+                                                <button type="submit" class="btn btn-default"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
+                                                <a data-toggle="modal" href="#advance" class="btn btn-default"><i class="fa fa-sm fa-fw fa-plus"></i> 高级</a>
+                                                <a data-toggle="modal" href="/cmdb/index/" class="btn btn-default"><i class="fa fa-sm fa-fw fa-refresh"></i> 重置</a>
+                                                <a data-toggle="modal" href="#exportModal" class="btn btn-default" onclick="ajaxExport()"><i class="fa fa-sm fa-fw fa-upload"></i> 导出</a>
+                                            </form>
+
+										</div>
+										<div class="table-responsive">
+
+											<table class="table table-bordered table-striped table-hover">
+												<thead>
+													<tr>
+                                                        <th nowrap style="text-align:center;">编号</th>
+                                                        <th nowrap style="text-align:center;">应用名称</th>
+                                                        <th nowrap style="text-align:center;">中文名称</th>
+                                                        <th nowrap style="text-align:center;">本地域</th>
+                                                        <th nowrap style="text-align:center;">研发Leader</th>
+                                                        <th nowrap style="text-align:center;">应用类型</th>
+                                                        <th nowrap style="text-align:center;">路径</th>
+                                                        <th nowrap style="text-align:center;">所属部门</th>
+                                                        <th nowrap style="text-align:center;">操作</th>
+													</tr>
+												</thead>
+												<tbody>
+                                                    <tr>
+                                                        <td nowrap style="text-align:center;">1001</td>
+                                                        <td nowrap style="text-align:center;">iservice</td>
+                                                        <td nowrap style="text-align:center;">网厅2.0</td>
+                                                        <td nowrap style="text-align:center;">iservice.10010.local</td>
+                                                        <td nowrap style="text-align:center;">布和</td>
+                                                        <td nowrap style="text-align:center;">java_tomcat</td>
+                                                        <td nowrap style="text-align:center;">研发一部</td>
+                                                        <td nowrap style="text-align:center;">/export/app/iservice.10010.local/</td>
+
+                                                        <td nowrap style="text-align:center;width:360px">
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#infoMore" onclick="serverDetailFn({{ i.id }})"><i class="fa fa-plus"></i> 报表</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="" onclick=""><i class="fa fa-shopping-cart"></i> 服务器</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#optionLogs" onclick="optionLogsFn({{ i.id }})"><i class="fa fa-book"></i> 研发成员</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="/application/management" onclick="serverRemarkFn({{ i.id }})"><i class="fa fa-camera"></i> 配置管理</a>
+                                                            <a data-toggle="modal" class="btn btn-info btn-xs" href="#serverRemark" onclick="serverRemarkFn({{ i.id }})"><i class="fa fa-camera"></i> 备注</a>
+                                                        </td>
+                                                    </tr>
+
+												</tbody>
+											</table>
+                                            <div style="background-color: #d6dde7;height:55px;padding:0 0 0 8px">
+                                               分页信息
+                                            </div>
+										</div>
+									</div>
+									<!-- end widget content -->
+								</div>
+								<!-- end widget div -->
+							</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+        <!-- 高级查询 -->
+        <div id="advance" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+
+                <div class="modal-content">
+                    <form action="/cmdb/index/" method="GET">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">高级查询</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+                                        <label>IP地址批量查询</label>
+                                        <textarea type="text" class="form-control" placeholder="请保持每行一个IP地址..." rows="6" name="ipMore" value=""></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="机房" name="idc" value="">
+                                            <input type="text" class="hidden" name="query" value="1">
+                                            <label for="email" class="glyphicon glyphicon-home" rel="tooltip" title="" data-original-title="机房"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="资产编号..." name="anum" value="">
+                                            <label for="email" class="glyphicon glyphicon-sort-by-order" rel="tooltip" title="" data-original-title="资产编号"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="SN号..." name="sn" value="">
+                                            <label for="email" class="glyphicon glyphicon-cog" rel="tooltip" title="" data-original-title="SN号"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="运维人" name="op" value="">
+                                            <label for="email" class="glyphicon glyphicon-user" rel="tooltip" title="" data-original-title="运维人"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="使用人" name="rd" value="">
+                                            <label for="email" class="glyphicon glyphicon-glass" rel="tooltip" title="" data-original-title="使用人"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="资产属性" name="attribute" value="">
+                                            <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="资产属性"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产更多信息 -->
+        <div id="infoMore" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">服务器信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverDetailInfo"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产变更日志 -->
+        <div id="optionLogs" class="modal fade" tabindex="-1" data-width="950" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:950px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产日志详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th style="text-align: center;width:8%">事件</th>
+                                        <th style="text-align: center;width:10%">操作</th>
+                                        <th style="text-align: center;">变更内容</th>
+                                        <th style="text-align: center;width:18%">时间</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;" id="serverLogsData">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产备注 -->
+        <div id="serverRemark" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产备注信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverRemarkText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel导出 -->
+        <div id="exportModal" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Excel 资产数据导出</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="exportText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<script>
+
+
+</script>
+
+{% include 'footer.html' %}

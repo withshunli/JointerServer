@@ -1,0 +1,446 @@
+{% include 'header.html' %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment">
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span>
+				</span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>Home</li><li>Tables</li><li>Normal Tables</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark">
+							<i class="fa fa-table fa-fw "></i>
+								应用管理
+							<span>>
+								配置管理
+							</span>
+						</h1>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+						<ul id="sparks" class="">
+							<li class="sparks-info">
+								<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
+								<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+									1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+								<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+							<li class="sparks-info">
+								<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+								<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+									110,150,300,130,400,240,220,310,220,300, 270, 210
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+					<div class="row">
+
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-darken" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>服务器信息列表</h2>
+								</header>
+
+								<!-- widget div-->
+
+                                <div role="content">
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body">
+
+										<p>
+											网厅2.0
+											<code>
+												.jarviswidget .well
+											</code>
+											(Bordered Tabs)
+										</p>
+										<hr class="simple">
+										<ul id="myTab1" class="nav nav-tabs bordered">
+											<li class="active">
+												<a href="#s1" data-toggle="tab" aria-expanded="true">应用首页</a>
+											</li>
+											<li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>分组管理</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>实例管理</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>脚本管理</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>版本管理</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>参数配置</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>key管理</a>
+											</li>
+                                            <li class="">
+												<a href="#s2" data-toggle="tab" aria-expanded="false"><i class="fa fa-fw fa-lg fa-gear"></i>Nginx管理</a>
+											</li>
+											<li class="dropdown">
+												<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <b class="caret"></b></a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="#s3" data-toggle="tab">@fat</a>
+													</li>
+													<li>
+														<a href="#s4" data-toggle="tab">@mdo</a>
+													</li>
+												</ul>
+											</li>
+											<li class="pull-right">
+												<a href="javascript:void(0);">
+												<div class="sparkline txt-color-pinkDark text-align-right" data-sparkline-height="18px" data-sparkline-width="90px" data-sparkline-barwidth="7"><canvas width="52" height="18" style="display: inline-block; width: 52px; height: 18px; vertical-align: top;"></canvas></div> </a>
+											</li>
+										</ul>
+
+										<div id="myTabContent1" class="">
+											<div class="tab-pane fade active in" id="s1">
+												<div class="well">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+
+                                                            <img src="/static/img/demo/responseimg.png" alt="" style="max-width:300px; width:100%;">
+
+                                                            <br>
+                                                            <h3>网厅2.0</h3>
+                                                            <p>    iservice.10010.com网厅自助服务做为网上营业厅的改版产品， 是公司近年来重大项目之一，在本次项目中完整的参与了其系统设计、方案评审、系统高可用测试、压力测试等工作，个人成长进步较为明显，网站在后续的宣传、推广后日PV量突破千万，月底高峰期破亿，日业务办理量达2000万，在面对系统高压力的情况下，与各部门之间配合共同对网站系统进行优化调整，在13年初加入CDN缓存系统，系统整体运行情况良好。</p>
+
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <table class="table table-bordered table-striped">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <th style="min-width:100px">应用类型</th>
+                                                                    <td>java_tomcat</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th style="min-width:100px">应用级别</th>
+                                                                    <td>0 级系统</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>本地域</th>
+                                                                    <td>iservice.10010.com</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>中间件版本</th>
+                                                                    <td>tomcat_6.0.55</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>JDK版本</th>
+                                                                    <td>1.74</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>数据库版本</th>
+                                                                    <td>Mysql 5.6</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>服务器总数</th>
+                                                                    <td>4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>实例总数</th>
+                                                                    <td>12</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>所属部门</th>
+                                                                    <td>研发一部</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>开发Leader</th>
+                                                                    <td>布和</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>研发成员</th>
+                                                                    <td>布和，张三，李四，王涛，小辉，丁丁</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>最近更新</th>
+                                                                    <td>2016年3月12日 20:30</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+											</div>
+											<div class="tab-pane fade" id="s2">
+												<p>
+													Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
+												</p>
+											</div>
+											<div class="tab-pane fade" id="s3">
+												<p>
+													Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+												</p>
+											</div>
+											<div class="tab-pane fade" id="s4">
+												<p>
+													Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table.
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<!-- end widget content -->
+
+								</div>
+
+								<!-- end widget div -->
+							</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+        <!-- 高级查询 -->
+        <div id="advance" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+
+                <div class="modal-content">
+                    <form action="/cmdb/index/" method="GET">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">高级查询</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="form-group">
+                                        <label>IP地址批量查询</label>
+                                        <textarea type="text" class="form-control" placeholder="请保持每行一个IP地址..." rows="6" name="ipMore" value=""></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="机房" name="idc" value="">
+                                            <input type="text" class="hidden" name="query" value="1">
+                                            <label for="email" class="glyphicon glyphicon-home" rel="tooltip" title="" data-original-title="机房"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="资产编号..." name="anum" value="">
+                                            <label for="email" class="glyphicon glyphicon-sort-by-order" rel="tooltip" title="" data-original-title="资产编号"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="SN号..." name="sn" value="">
+                                            <label for="email" class="glyphicon glyphicon-cog" rel="tooltip" title="" data-original-title="SN号"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="运维人" name="op" value="">
+                                            <label for="email" class="glyphicon glyphicon-user" rel="tooltip" title="" data-original-title="运维人"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="使用人" name="rd" value="">
+                                            <label for="email" class="glyphicon glyphicon-glass" rel="tooltip" title="" data-original-title="使用人"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="icon-addon addon-md">
+                                            <input type="text" class="form-control" placeholder="资产属性" name="attribute" value="">
+                                            <label for="email" class="glyphicon glyphicon-tags" rel="tooltip" title="" data-original-title="资产属性"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning"><i class="fa fa-sm fa-fw fa-search"></i> 搜索</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产更多信息 -->
+        <div id="infoMore" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">服务器信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverDetailInfo"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产变更日志 -->
+        <div id="optionLogs" class="modal fade" tabindex="-1" data-width="950" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:950px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产日志详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th style="text-align: center;width:8%">事件</th>
+                                        <th style="text-align: center;width:10%">操作</th>
+                                        <th style="text-align: center;">变更内容</th>
+                                        <th style="text-align: center;width:18%">时间</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;" id="serverLogsData">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 资产备注 -->
+        <div id="serverRemark" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">资产备注信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="serverRemarkText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel导出 -->
+        <div id="exportModal" class="modal fade" tabindex="-1" data-width="400" style="padding:50px 0px">
+            <div class="modal-dialog" style="width:450px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Excel 资产数据导出</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12" id="exportText"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger"><i class="fa fa-sm fa-fw fa-times"></i> 关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<script>
+
+
+</script>
+
+{% include 'footer.html' %}
